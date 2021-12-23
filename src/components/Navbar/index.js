@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { useTheme } from "../../providers/ThemeContext";
 import {
   MobileIcon,
   Nav,
@@ -10,9 +11,13 @@ import {
   NavLinks,
   NavLogo,
   NavMenu,
+  ThemeIconLight,
+  ThemeIconNight,
 } from "./styles";
 
 const Navbar = ({ toggle }) => {
+  const { setCurrentTheme, getOpositeTheme, currentTheme } = useTheme();
+
   return (
     <Nav>
       <NavbarContainer>
@@ -35,7 +40,9 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/signin">Don't touch!</NavBtnLink>
+          <NavBtnLink onClick={() => setCurrentTheme(getOpositeTheme())}>
+            {currentTheme === "Light" ? <ThemeIconNight /> : <ThemeIconLight />}
+          </NavBtnLink>
         </NavBtn>
       </NavbarContainer>
     </Nav>

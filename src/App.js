@@ -1,11 +1,19 @@
-import "./App.css";
+import { ThemeProvider } from "styled-components";
 
-import Home from "./pages";
+import Home from "./pages/Home";
+import { useTheme } from "./providers/ThemeContext";
+import GlobalStyle from "./styles/globalStyles";
+import { themes } from "./styles/themes";
 
 function App() {
+  const { currentTheme } = useTheme();
+
   return (
     <>
-      <Home />
+      <ThemeProvider theme={themes[currentTheme]}>
+        <GlobalStyle />
+        <Home />
+      </ThemeProvider>
     </>
   );
 }

@@ -40,11 +40,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(6, 60px);
   text-align: center;
 
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+  @media screen and (min-width: 481px) {
+    grid-template-rows: repeat(6, 80px);
   }
 `;
 
@@ -71,9 +71,9 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRouter = styled(LinkR)`
+export const SidebarTheme = styled(LinkR)`
   border-radious: 50px;
-  background: #01bf71;
+  background: var(--color-primary-light);
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;

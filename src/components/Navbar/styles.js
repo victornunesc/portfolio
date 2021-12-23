@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
 export const Nav = styled.nav`
   background: #000;
@@ -14,7 +15,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (min-width: 961px) {
     transition: 0.8s all ease;
   }
 `;
@@ -42,29 +43,29 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const MobileIcon = styled.div`
-  display: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #fff;
+  @media screen and (min-width: 769px) {
+    display: none;
   }
 `;
 
 export const NavMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  margin-right: -22px;
+  display: none;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (min-width: 769px) {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
   }
 `;
 
@@ -87,23 +88,35 @@ export const NavLinks = styled(LinkS)`
 `;
 
 export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
+  display: none;
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (min-width: 769px) {
+    display: flex;
+    align-items: center;
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const ThemeIconLight = styled(MdOutlineLightMode)`
+  color: var(--color-primary-light);
+`;
+
+export const ThemeIconNight = styled(MdOutlineNightlight)`
+  color: var(--color-primary-dark);
+`;
+
+export const NavBtnLink = styled.div`
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50px;
-  background: #01bf71;
+  background: ${({ theme }) => theme.backgroundColor};
   white-space: nowrap;
-  padding: 10px 22px;
-  color: #010606;
+  color: ${({ theme }) => theme.color};
   font-size: 16px;
   outline: none;
-  border: none;
+  border: 2px solid ${({ theme }) => theme.color};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

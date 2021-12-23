@@ -1,15 +1,18 @@
+import { useTheme } from "../../providers/ThemeContext";
 import {
   CloseIcon,
   Icon,
   SidebarContainer,
   SidebarLink,
   SidebarMenu,
-  SidebarRouter,
+  SidebarTheme,
   SidebarWrapper,
   SideBtnWrap,
 } from "./styles";
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const { setCurrentTheme, getOpositeTheme } = useTheme();
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -17,13 +20,26 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about">Sobre</SidebarLink>
-          <SidebarLink to="discover">Portfólio</SidebarLink>
-          <SidebarLink to="services">Novidades</SidebarLink>
-          <SidebarLink to="signup">Contato</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>
+            Sobre
+          </SidebarLink>
+          <SidebarLink to="discover" onClick={toggle}>
+            Portfólio
+          </SidebarLink>
+          <SidebarLink to="services" onClick={toggle}>
+            Novidades
+          </SidebarLink>
+          <SidebarLink to="signup" onClick={toggle}>
+            Contato
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRouter to="signin">Sign In</SidebarRouter>
+          <SidebarTheme
+            to="signin"
+            onClick={() => setCurrentTheme(getOpositeTheme())}
+          >
+            Modo {getOpositeTheme()}
+          </SidebarTheme>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
