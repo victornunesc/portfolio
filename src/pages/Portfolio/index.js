@@ -1,34 +1,143 @@
-import { Container, IconDiv, PortfolioImage, DescriptionImage } from "./styles";
+import {
+  Container,
+  IconDiv,
+  PortfolioImage,
+  DescriptionImage,
+  Title,
+  Description,
+  Section,
+} from "./styles";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, EffectCoverflow } from "swiper";
+
+import oilCycle from "../../assets/portfolio/oil-cycle.png";
+import beer from "../../assets/portfolio/beer.png";
+import habits from "../../assets/portfolio/habits.png";
 
 const Portfolio = () => {
   return (
     <Container>
+      <Title>Portfólio!</Title>
       <div>
-        <h2>Portfólio!</h2>
+        <button>Front-end</button>
+        <button>Back-end</button>
+      </div>
+      <div>
         <Swiper
-          spaceBetween={40}
-          slidesPerView={3}
+          effect={"coverflow"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          slidesPerView={1}
           centeredSlides={true}
-          loop={true}
           grabCursor={true}
+          grab={true}
           pagination={{
             clickable: true,
           }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           className="mySwiper"
-          breakpoints={{ 768: { slidesPerView: 5 } }}
         >
           <SwiperSlide>
             <IconDiv>
-              <PortfolioImage src="" alt="Python Icone" />
-              <DescriptionImage>Python (Flask, Django)</DescriptionImage>
+              <PortfolioImage src={oilCycle} alt="Oil Cycle" />
+              <DescriptionImage>Oil Cycle</DescriptionImage>
+              <Section>
+                <div>
+                  <h4>Técnologias utilizadas</h4>
+                  <p>React, Chakra.ui, Typescript</p>
+                </div>
+                <div>
+                  <h4>Serviços</h4>
+                  <p>Frontend - UI/UX, Integração com APIs</p>
+                </div>
+                <div>
+                  <h4>Data</h4>
+                  <p>Fevereiro/2022</p>
+                </div>
+              </Section>
+              <hr />
+              <Description>
+                Projeto feito em equipe para o Capstone de React na Kenzie
+                Academy. Fui escolhido como Tech Lead da equipe sendo algumas de
+                minha atribuições manter a qualidade e padronização do código.
+              </Description>
+              <Description>
+                O site tem o objetivo de servir como intermedio entre coletores
+                e doares de óleo de cozinha de forma adiminuir a poluição
+                causada pelo descarte irregular
+              </Description>
+            </IconDiv>
+          </SwiperSlide>
+          <SwiperSlide>
+            <IconDiv>
+              <PortfolioImage src={beer} alt="Administração de bebidas" />
+              <DescriptionImage>Administração de bebidas</DescriptionImage>
+              <Section>
+                <div>
+                  <h4>Técnologias utilizadas</h4>
+                  <p>React, Chakra.ui, Typescript</p>
+                </div>
+                <div>
+                  <h4>Serviços</h4>
+                  <p>Frontend - UI/UX, Integração com APIs</p>
+                </div>
+                <div>
+                  <h4>Data</h4>
+                  <p>Fevereiro/2022</p>
+                </div>
+              </Section>
+              <hr />
+              <Description>
+                Projeto feito em equipe para o Capstone de React na Kenzie
+                Academy. Fui escolhido como Tech Lead da equipe sendo algumas de
+                minha atribuições manter a qualidade e padronização do código.
+              </Description>
+              <Description>
+                O site tem o objetivo de servir como intermedio entre coletores
+                e doares de óleo de cozinha de forma adiminuir a poluição
+                causada pelo descarte irregular
+              </Description>
+            </IconDiv>
+          </SwiperSlide>
+          <SwiperSlide>
+            <IconDiv>
+              <PortfolioImage src={habits} alt="Gestão de hábitos" />
+              <DescriptionImage>Gestão de hábitos</DescriptionImage>
+              <Section>
+                <div>
+                  <h4>Técnologias utilizadas</h4>
+                  <p>React, Chakra.ui, Typescript</p>
+                </div>
+                <div>
+                  <h4>Serviços</h4>
+                  <p>Frontend - UI/UX, Integração com APIs</p>
+                </div>
+                <div>
+                  <h4>Data</h4>
+                  <p>Fevereiro/2022</p>
+                </div>
+              </Section>
+              <hr />
+              <Description>
+                Projeto feito em equipe para o Capstone de React na Kenzie
+                Academy. Fui escolhido como Tech Lead da equipe sendo algumas de
+                minha atribuições manter a qualidade e padronização do código.
+              </Description>
+              <Description>
+                O site tem o objetivo de servir como intermedio entre coletores
+                e doares de óleo de cozinha de forma adiminuir a poluição
+                causada pelo descarte irregular
+              </Description>
             </IconDiv>
           </SwiperSlide>
         </Swiper>

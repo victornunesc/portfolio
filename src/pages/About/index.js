@@ -54,8 +54,8 @@ const About = () => {
       </Section>
 
       <hr />
+      <Title style={{ marginBottom: "20px" }}>Skills</Title>
       <div>
-        <Title style={{ marginBottom: "20px" }}>Skills</Title>
         <Swiper
           spaceBetween={30}
           slidesPerView={3}

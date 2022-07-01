@@ -9,14 +9,25 @@ export const Container = styled.div`
   position: relative;
   text-align: center;
   padding: 15px;
-  height: 98vh;
+  height: 90vh;
   justify-content: space-evenly;
   /* top: -80px; */
 `;
 
+export const Title = styled.h2`
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+`;
+
 export const Section = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
 `;
 
 export const IconDiv = styled.div`
@@ -25,12 +36,18 @@ export const IconDiv = styled.div`
   flex-direction: column;
   margin-bottom: 20px;
 `;
+
 export const PortfolioImage = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 600px;
+  height: 300px;
 `;
 
 export const DescriptionImage = styled.span`
+  text-align: center;
+  padding: 8px;
+`;
+
+export const Description = styled.p`
   text-align: center;
   padding: 8px;
 `;
