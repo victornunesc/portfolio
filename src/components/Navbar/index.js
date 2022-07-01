@@ -20,31 +20,28 @@ const Navbar = ({ toggle }) => {
 
   return (
     <Nav>
+      <NavLogo to="/">Victor Nunes C.</NavLogo>
       <NavbarContainer>
-        <NavLogo to="/">Victor Nunes C.</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks to="about">Sobre</NavLinks>
+            <NavLinks to="about">Quem sou</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="discover">Portfólio</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="services">Novidades</NavLinks>
-          </NavItem>
-          <NavItem>
             <NavLinks to="services">Contato</NavLinks>
           </NavItem>
         </NavMenu>
-        <NavBtn>
-          <NavBtnLink onClick={() => setCurrentTheme(getOpositeTheme())}>
-            {currentTheme === "Light" ? <ThemeIconNight /> : <ThemeIconLight />}
-          </NavBtnLink>
-        </NavBtn>
       </NavbarContainer>
+      <NavBtn>
+        <NavBtnLink onClick={() => setCurrentTheme(getOpositeTheme())}>
+          {currentTheme === "Light" ? <ThemeIconNight /> : <ThemeIconLight />}
+        </NavBtnLink>
+      </NavBtn>
     </Nav>
   );
 };

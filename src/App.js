@@ -1,4 +1,5 @@
 import { ThemeProvider } from "styled-components";
+import About from "./pages/About";
 
 import Home from "./pages/Home";
 import { useTheme } from "./providers/ThemeContext";
@@ -13,6 +14,7 @@ function App() {
       <ThemeProvider theme={themes[currentTheme]}>
         <GlobalStyle />
         <Home />
+        <About />
       </ThemeProvider>
     </>
   );
