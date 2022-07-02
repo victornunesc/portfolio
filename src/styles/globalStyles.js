@@ -51,6 +51,36 @@ const GlobalStyle = createGlobalStyle`
       max-height: 90vh;
       color: black;
     }
+
+    p {
+      font-family: "Syne Mono", monospace;
+      font-size: 0.8em;
+      padding: 12px;
+
+      @media screen and (min-width: 769px) {
+        font-size: 1em;
+      }
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 1em;
+
+      @media screen and (min-width: 769px) {
+        font-size: 1.6em;
+      }
+    }
+
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 0.8em;
+
+      @media screen and (min-width: 769px) {
+        font-size: 1.3em;
+      }
+    }
 `;
 
 export default GlobalStyle;

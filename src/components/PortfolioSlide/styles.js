@@ -17,10 +17,8 @@ export const Section = styled.section`
     width: 100%;
   }
 
-  h4 {
-  }
-
   p {
+    font-family: Arial;
     margin: 0px 10px;
   }
 
@@ -47,7 +45,7 @@ export const PortfolioImage = styled.img`
   }
 `;
 
-export const DescriptionImage = styled.span`
+export const DescriptionImage = styled.h3`
   text-align: center;
   padding: 8px;
 `;
@@ -116,4 +114,8 @@ export const ContainerStack = styled.div`
   }
 `;
 
-export const ContainerDescription = styled.div``;
+export const ContainerDescription = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;

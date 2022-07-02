@@ -11,11 +11,19 @@ import oilCycleHome from "../../assets/portfolio/oilCycle/oil-cycle-home.png";
 import oilCycleDashboard from "../../assets/portfolio/oilCycle/oil-cycle-dashboard.png";
 import oilCycleMarket from "../../assets/portfolio/oilCycle/oil-cycle-market.png";
 import oilCycleMobile from "../../assets/portfolio/oilCycle/oil-cycle-mobile.png";
-import oilCyclePerfil from "../../assets/portfolio/oilCycle/oil-cycle-perfil-mobile.png";
 import oilCycleRegister from "../../assets/portfolio/oilCycle/oil-cycle-register.png";
 
-import beer from "../../assets/portfolio/beer.png";
-import habits from "../../assets/portfolio/habits.png";
+//habits
+import habitsLogin from "../../assets/portfolio/habits/habit-login.png";
+import habitsRegister from "../../assets/portfolio/habits/habit-register.png";
+import habitsHome from "../../assets/portfolio/habits/habit-home.png";
+import habitsPerfil from "../../assets/portfolio/habits/habit-perfil.png";
+import habitsGroup from "../../assets/portfolio/habits/habit-group.png";
+
+//beer
+import beerHome from "../../assets/portfolio/beer/beer-home.png";
+import beerList from "../../assets/portfolio/beer/beer-list.png";
+import beerToast from "../../assets/portfolio/beer/beer-toast.png";
 
 import { useState } from "react";
 import PortfolioSlide from "../../components/PortfolioSlide";
@@ -57,13 +65,13 @@ const Portfolio = () => {
               <PortfolioSlide
                 imgPortfolio={oilCycleHome}
                 title="Oil Cycle"
-                techs="React, Chakra.ui, Typescript"
-                services="Frontend - UI/UX, Integração com APIs"
+                techs="React, Chakra.ui, Typescript, JSON Server"
+                services="Code, UI/UX, Fake REST API"
                 date="Fevereiro/2022"
                 description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
-                Dempenhei o papel de Tech Lead sendo algumas de minha
-                atribuições manter a qualidade e padronização do código. O site tem o objetivo de servir como intermedio entre coletores e
-                doares de óleo de cozinha de forma adiminuir a poluição causada pelo
+                Desempenhei o papel de Tech Lead sendo algumas de minhas
+                atribuições manter a qualidade e padronização do código. O site tem o objetivo de servir como intermediário entre coletores e
+                doadores de óleo de cozinha de forma adiminuir a poluição causada pelo
                 descarte irregular"
                 github="https://github.com/victornunesc/Oil-Cycle"
                 deploy="https://oil-cycle.vercel.app/"
@@ -78,34 +86,41 @@ const Portfolio = () => {
             </SwiperSlide>
             <SwiperSlide>
               <PortfolioSlide
-                imgPortfolio={beer}
-                title="Administração de bebidas"
-                techs="React, Chakra.ui, Typescript"
-                services="Frontend - UI/UX, Integração com APIs"
-                date="Fevereiro/2022"
-                description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
-                Fui escolhido como Tech Lead da equipe sendo algumas de minha
-                atribuições manter a qualidade e padronização do código. \n O site tem o objetivo de servir como intermedio entre coletores e
-                doares de óleo de cozinha de forma adiminuir a poluição causada pelo
-                descarte irregular"
-                github="https://github.com/victornunesc/Oil-Cycle"
-                deploy={"https://oil-cycle.vercel.app/"}
+                imgPortfolio={habitsRegister}
+                title="Gestão de hábitos"
+                techs="React, Styled-components, Javascript"
+                services="Code, UI/UX, Integração com APIs externa"
+                date="Dezembro/2021"
+                description="Projeto feito em equipe na Kenzie Academy.
+                O objetivo da plataforma é que o usuário faça cadastro e consiga gerir seus hábitos, 
+                e participar de grupos com outras pessoas com a mesma categoria de hábitos e metas. 
+                Fui escolhido como Tech Lead do projeto"
+                github="https://github.com/victornunesc/WeDo"
+                deploy={"https://we-do.vercel.app/"}
+                carousel={[
+                  habitsLogin,
+                  habitsRegister,
+                  habitsHome,
+                  habitsPerfil,
+                  habitsGroup,
+                ]}
               />
             </SwiperSlide>
             <SwiperSlide>
               <PortfolioSlide
-                imgPortfolio={habits}
-                title="Gestão de hábitos"
-                techs="React, Chakra.ui, Typescript"
-                services="Frontend - UI/UX, Integração com APIs"
-                date="Fevereiro/2022"
-                description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
-                Fui escolhido como Tech Lead da equipe sendo algumas de minha
-                atribuições manter a qualidade e padronização do código. \n O site tem o objetivo de servir como intermedio entre coletores e
-                doares de óleo de cozinha de forma adiminuir a poluição causada pelo
-                descarte irregular"
-                github="https://github.com/victornunesc/Oil-Cycle"
-                deploy={"https://oil-cycle.vercel.app/"}
+                imgPortfolio={beerHome}
+                title="Administração de bebidas"
+                techs="React, Styled-components, Javascript"
+                services="Code, UI/UX, Integração com APIs externa"
+                date="Novembro/2021"
+                description="Projeto feito para fins didáticos. O objetivo era utilizar Context API para criar 3 eventos distintos onde pudesse 
+                escolher de forma independente a lista de bebidas para cada evento através da API - PUNK API"
+                github="
+                https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-administracao-de-eventos-victornunesc"
+                deploy={
+                  "https://react-entrega-s3-administracao-de-eventos-victornunesc.vercel.app/"
+                }
+                carousel={[beerHome, beerList, beerToast]}
               />
             </SwiperSlide>
           </Swiper>

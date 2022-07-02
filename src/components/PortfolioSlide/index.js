@@ -10,7 +10,7 @@ import {
   ContainerDescription,
 } from "./styles";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Modal from "react-modal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -57,7 +57,7 @@ const PortfolioSlide = ({
       <Section>
         <ul>
           <li>
-            <h4>Técnologias utilizadas</h4>
+            <h4>Tecnologias utilizadas</h4>
             <p>{techs}</p>
           </li>
           <li>
@@ -96,6 +96,7 @@ const PortfolioSlide = ({
             </Swiper>
           </ContainerStack>
           <ContainerDescription>
+            <h3>{title}</h3>
             <Description>{description}</Description>
             <Description>
               Deploy:{" "}
