@@ -34,42 +34,6 @@ export const IconDiv = styled.div`
   align-items: center;
   flex-direction: column;
   max-height: 100%;
-
-  .ReactModal__Html--open,
-  .ReactModal__Body--open {
-    overflow: hidden; /* prevents background page from scrolling when the modal is open */
-  }
-  .ReactModal__Overlay {
-    position: fixed;
-    z-index: 999999;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ReactModal__Content {
-    background: white;
-    width: 50rem;
-    max-width: calc(100vw - 2rem);
-    max-height: calc(100vh - 2rem);
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
-    overflow-y: auto;
-    position: relative;
-  }
-
-  .modal-close-btn {
-    cursor: pointer;
-    top: 1.5rem;
-    right: 1.5rem;
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-  }
 `;
 
 export const PortfolioImage = styled.img`
@@ -91,9 +55,65 @@ export const DescriptionImage = styled.span`
 export const SectionDescription = styled.div`
   overflow-y: auto;
   scrollbar-color: #c22e18;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Description = styled.p`
   text-align: center;
   padding: 8px;
 `;
+
+export const Button = styled.button`
+  background-color: #f2f2f2;
+  border: 2px solid #422800;
+  border-radius: 5px;
+  box-shadow: black 3px 3px 0 0;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+  @media (min-width: 768px) {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+`;
+
+export const ContainerStack = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 300px;
+  max-height: 150px;
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    max-height: 250px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const ContainerDescription = styled.div``;

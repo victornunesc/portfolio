@@ -27,6 +27,30 @@ const GlobalStyle = createGlobalStyle`
   .ReactModal__Body--open {
     overflow: hidden;
   }
+
+  .ReactModal__Content { 
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      right: 40px;
+      bottom: 40px;
+      border: 1px solid #ccc;
+      background: #fff;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 4px;
+      outline: none;
+      padding: 20px;
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      max-width: 768px;
+      max-height: 90vh;
+      color: black;
+    }
 `;
 
 export default GlobalStyle;

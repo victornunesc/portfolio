@@ -5,11 +5,21 @@ import {
   Description,
   Section,
   SectionDescription,
+  Button,
+  ContainerStack,
+  ContainerDescription,
 } from "./styles";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Modal from "react-modal";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination } from "swiper";
 
 const PortfolioSlide = ({
   imgPortfolio,
@@ -20,6 +30,7 @@ const PortfolioSlide = ({
   description,
   github,
   deploy,
+  carousel,
 }) => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
@@ -32,15 +43,6 @@ const PortfolioSlide = ({
   }
 
   const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-    },
-
     overlay: {
       zIndex: "999",
       height: "100vh",
@@ -67,8 +69,8 @@ const PortfolioSlide = ({
             <p>{date}</p>
           </li>
           <li>
-            <h4>+</h4>
-            <button onClick={openModal}>Mais inf.</button>
+            <h4>Mais inf.</h4>
+            <Button onClick={openModal}>Click</Button>
           </li>
         </ul>
       </Section>
@@ -77,21 +79,37 @@ const PortfolioSlide = ({
         onRequestClose={closeModal}
         style={customStyles}
         bodyOpenClassName={"ReactModal__Body--open"}
+        className={"ReactModal__Content"}
       >
         <SectionDescription>
-          <Description>{description}</Description>
-          <Description>
-            Deploy:{" "}
-            <a href={deploy} target="_blank" rel="noreferrer">
-              Clique aqui
-            </a>
-          </Description>
-          <Description>
-            Github:{" "}
-            <a href={github} target="_blank" rel="noreferrer">
-              Clique aqui
-            </a>
-          </Description>
+          <ContainerStack>
+            <Swiper
+              pagination={true}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {carousel?.map((image, key) => (
+                <SwiperSlide key={key}>
+                  <img src={image} alt="asd" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ContainerStack>
+          <ContainerDescription>
+            <Description>{description}</Description>
+            <Description>
+              Deploy:{" "}
+              <a href={deploy} target="_blank" rel="noreferrer">
+                Clique aqui
+              </a>
+            </Description>
+            <Description>
+              Github:{" "}
+              <a href={github} target="_blank" rel="noreferrer">
+                Clique aqui
+              </a>
+            </Description>
+          </ContainerDescription>
         </SectionDescription>
       </Modal>
     </IconDiv>

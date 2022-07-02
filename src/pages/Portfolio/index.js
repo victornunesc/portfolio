@@ -6,7 +6,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, EffectCoverflow } from "swiper";
 
-import oilCycle from "../../assets/portfolio/oil-cycle.png";
+//OilCycle
+import oilCycleHome from "../../assets/portfolio/oilCycle/oil-cycle-home.png";
+import oilCycleDashboard from "../../assets/portfolio/oilCycle/oil-cycle-dashboard.png";
+import oilCycleMarket from "../../assets/portfolio/oilCycle/oil-cycle-market.png";
+import oilCycleMobile from "../../assets/portfolio/oilCycle/oil-cycle-mobile.png";
+import oilCyclePerfil from "../../assets/portfolio/oilCycle/oil-cycle-perfil-mobile.png";
+import oilCycleRegister from "../../assets/portfolio/oilCycle/oil-cycle-register.png";
+
 import beer from "../../assets/portfolio/beer.png";
 import habits from "../../assets/portfolio/habits.png";
 
@@ -48,7 +55,7 @@ const Portfolio = () => {
           >
             <SwiperSlide>
               <PortfolioSlide
-                imgPortfolio={oilCycle}
+                imgPortfolio={oilCycleHome}
                 title="Oil Cycle"
                 techs="React, Chakra.ui, Typescript"
                 services="Frontend - UI/UX, Integração com APIs"
@@ -60,6 +67,13 @@ const Portfolio = () => {
                 descarte irregular"
                 github="https://github.com/victornunesc/Oil-Cycle"
                 deploy="https://oil-cycle.vercel.app/"
+                carousel={[
+                  oilCycleHome,
+                  oilCycleRegister,
+                  oilCycleMobile,
+                  oilCycleDashboard,
+                  oilCycleMarket,
+                ]}
               />
             </SwiperSlide>
             <SwiperSlide>
