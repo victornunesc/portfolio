@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.backgroundColor};
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
+
+  .ReactModal__Body--open {
+    overflow: hidden;
+  }
 `;
 
 export default GlobalStyle;

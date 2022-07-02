@@ -1,16 +1,4 @@
-import {
-  Container,
-  IconDiv,
-  PortfolioImage,
-  DescriptionImage,
-  Title,
-  Description,
-  Section,
-  Button,
-  DivButton,
-  SectionDescription,
-  ContainerStack,
-} from "./styles";
+import { Container, Title, Button, DivButton, ContainerStack } from "./styles";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -23,6 +11,7 @@ import beer from "../../assets/portfolio/beer.png";
 import habits from "../../assets/portfolio/habits.png";
 
 import { useState } from "react";
+import PortfolioSlide from "../../components/PortfolioSlide";
 
 const Portfolio = () => {
   const [isFront, setIsFront] = useState(true);
@@ -58,165 +47,52 @@ const Portfolio = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <IconDiv>
-                <PortfolioImage src={oilCycle} alt="Oil Cycle" />
-                <DescriptionImage>Oil Cycle</DescriptionImage>
-                <Section>
-                  <div>
-                    <h4>Técnologias utilizadas</h4>
-                    <p>React, Chakra.ui, Typescript</p>
-                  </div>
-                  <div>
-                    <h4>Serviços</h4>
-                    <p>Frontend - UI/UX, Integração com APIs</p>
-                  </div>
-                  <div>
-                    <h4>Data</h4>
-                    <p>Fevereiro/2022</p>
-                  </div>
-                </Section>
-                <hr />
-                <SectionDescription>
-                  <Description>
-                    Projeto feito em equipe para o Capstone de React na Kenzie
-                    Academy. Fui escolhido como Tech Lead da equipe sendo
-                    algumas de minha atribuições manter a qualidade e
-                    padronização do código.
-                  </Description>
-                  <Description>
-                    O site tem o objetivo de servir como intermedio entre
-                    coletores e doares de óleo de cozinha de forma adiminuir a
-                    poluição causada pelo descarte irregular
-                  </Description>
-                  <Description>
-                    Deploy:{" "}
-                    <a
-                      href="https://oil-cycle.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Clique aqui
-                    </a>
-                  </Description>
-                  <Description>
-                    Github:{" "}
-                    <a
-                      href="https://github.com/victornunesc/Oil-Cycle"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Clique aqui
-                    </a>
-                  </Description>
-                </SectionDescription>
-              </IconDiv>
+              <PortfolioSlide
+                imgPortfolio={oilCycle}
+                title="Oil Cycle"
+                techs="React, Chakra.ui, Typescript"
+                services="Frontend - UI/UX, Integração com APIs"
+                date="Fevereiro/2022"
+                description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
+                Dempenhei o papel de Tech Lead sendo algumas de minha
+                atribuições manter a qualidade e padronização do código. O site tem o objetivo de servir como intermedio entre coletores e
+                doares de óleo de cozinha de forma adiminuir a poluição causada pelo
+                descarte irregular"
+                github="https://github.com/victornunesc/Oil-Cycle"
+                deploy="https://oil-cycle.vercel.app/"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <IconDiv>
-                <PortfolioImage src={beer} alt="Administração de bebidas" />
-                <DescriptionImage>Administração de bebidas</DescriptionImage>
-                <Section>
-                  <div>
-                    <h4>Técnologias utilizadas</h4>
-                    <p>React, Chakra.ui, Typescript</p>
-                  </div>
-                  <div>
-                    <h4>Serviços</h4>
-                    <p>Frontend - UI/UX, Integração com APIs</p>
-                  </div>
-                  <div>
-                    <h4>Data</h4>
-                    <p>Fevereiro/2022</p>
-                  </div>
-                </Section>
-                <SectionDescription>
-                  <Description>
-                    Projeto feito em equipe para o Capstone de React na Kenzie
-                    Academy. Fui escolhido como Tech Lead da equipe sendo
-                    algumas de minha atribuições manter a qualidade e
-                    padronização do código.
-                  </Description>
-                  <Description>
-                    O site tem o objetivo de servir como intermedio entre
-                    coletores e doares de óleo de cozinha de forma adiminuir a
-                    poluição causada pelo descarte irregular
-                  </Description>
-                  <Description>
-                    Deploy:{" "}
-                    <a
-                      href="https://oil-cycle.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Clique aqui
-                    </a>
-                  </Description>
-                  <Description>
-                    Github:{" "}
-                    <a
-                      href="https://github.com/victornunesc/Oil-Cycle"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Clique aqui
-                    </a>
-                  </Description>
-                </SectionDescription>
-              </IconDiv>
+              <PortfolioSlide
+                imgPortfolio={beer}
+                title="Administração de bebidas"
+                techs="React, Chakra.ui, Typescript"
+                services="Frontend - UI/UX, Integração com APIs"
+                date="Fevereiro/2022"
+                description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
+                Fui escolhido como Tech Lead da equipe sendo algumas de minha
+                atribuições manter a qualidade e padronização do código. \n O site tem o objetivo de servir como intermedio entre coletores e
+                doares de óleo de cozinha de forma adiminuir a poluição causada pelo
+                descarte irregular"
+                github="https://github.com/victornunesc/Oil-Cycle"
+                deploy={"https://oil-cycle.vercel.app/"}
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <IconDiv>
-                <PortfolioImage src={habits} alt="Gestão de hábitos" />
-                <DescriptionImage>Gestão de hábitos</DescriptionImage>
-                <Section>
-                  <div>
-                    <h4>Técnologias utilizadas</h4>
-                    <p>React, Chakra.ui, Typescript</p>
-                  </div>
-                  <div>
-                    <h4>Serviços</h4>
-                    <p>Frontend - UI/UX, Integração com APIs</p>
-                  </div>
-                  <div>
-                    <h4>Data</h4>
-                    <p>Fevereiro/2022</p>
-                  </div>
-                </Section>
-                <hr />
-                <SectionDescription>
-                  <Description>
-                    Projeto feito em equipe para o Capstone de React na Kenzie
-                    Academy. Fui escolhido como Tech Lead da equipe sendo
-                    algumas de minha atribuições manter a qualidade e
-                    padronização do código.
-                  </Description>
-                  <Description>
-                    O site tem o objetivo de servir como intermedio entre
-                    coletores e doares de óleo de cozinha de forma adiminuir a
-                    poluição causada pelo descarte irregular
-                  </Description>
-                  <Description>
-                    Deploy:{" "}
-                    <a
-                      href="https://oil-cycle.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Clique aqui
-                    </a>
-                  </Description>
-                  <Description>
-                    Github:{" "}
-                    <a
-                      href="https://github.com/victornunesc/Oil-Cycle"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Clique aqui
-                    </a>
-                  </Description>
-                </SectionDescription>
-              </IconDiv>
+              <PortfolioSlide
+                imgPortfolio={habits}
+                title="Gestão de hábitos"
+                techs="React, Chakra.ui, Typescript"
+                services="Frontend - UI/UX, Integração com APIs"
+                date="Fevereiro/2022"
+                description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
+                Fui escolhido como Tech Lead da equipe sendo algumas de minha
+                atribuições manter a qualidade e padronização do código. \n O site tem o objetivo de servir como intermedio entre coletores e
+                doares de óleo de cozinha de forma adiminuir a poluição causada pelo
+                descarte irregular"
+                github="https://github.com/victornunesc/Oil-Cycle"
+                deploy={"https://oil-cycle.vercel.app/"}
+              />
             </SwiperSlide>
           </Swiper>
         </ContainerStack>
