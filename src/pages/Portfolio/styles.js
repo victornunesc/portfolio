@@ -8,22 +8,37 @@ export const Container = styled.div`
   max-width: 768px;
   position: relative;
   text-align: center;
-  padding: 15px;
-  height: 90vh;
+  padding: 0px 15px;
+  height: calc(100vh - 80px);
   justify-content: space-evenly;
-  /* top: -80px; */
 `;
 
 export const Title = styled.h2`
   font-family: "Playfair Display", serif;
   font-weight: bold;
+  font-size: 1.6em;
 `;
 
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
+  width: 80%;
+  justify-content: center;
+  max-height: 100%;
+  margin: 15px;
+
+  div {
+    margin: 3px;
+    border-right: 1px solid ${(props) => props.theme.color};
+    border-left: 1px solid ${(props) => props.theme.color};
+  }
+
+  h4 {
+  }
+
+  p {
+    margin: 0px 10px;
+  }
 
   @media screen and (min-width: 769px) {
     flex-direction: row;
@@ -34,16 +49,17 @@ export const IconDiv = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px;
+  max-height: 100%;
 `;
 
 export const PortfolioImage = styled.img`
+  display: none;
   max-width: 340px;
-  height: 300px;
+  max-height: 230px;
 
-  @media screen and (min-width: 769px) {
-    max-width: 600px;
-    height: 300px;
+  @media screen and (min-width: 769px) and (min-height: 628px),
+    (min-height: 628px) {
+    display: block;
   }
 `;
 
@@ -52,9 +68,29 @@ export const DescriptionImage = styled.span`
   padding: 8px;
 `;
 
+export const SectionDescription = styled.div`
+  max-height: 10em;
+  overflow-y: scroll;
+  scrollbar-color: #c22e18;
+  width: 80%;
+  box-shadow: inset rgb(50 50 93 / 25%) -5px -5px 0px 0px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  border-radius: 25px;
+`;
+
 export const Description = styled.p`
   text-align: center;
   padding: 8px;
+`;
+
+export const ContainerStack = styled.div`
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+
+  .mySwiper {
+    max-height: 100%;
+  }
 `;
 
 export const Button = styled.button`

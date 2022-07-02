@@ -54,7 +54,7 @@ const About = () => {
       </Section>
 
       <hr />
-      <Title style={{ marginBottom: "20px" }}>Skills</Title>
+      <Title>Skills</Title>
       <div>
         <Swiper
           spaceBetween={30}
@@ -117,6 +117,7 @@ const About = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <hr />
     </Container>
   );
 };
