@@ -25,6 +25,11 @@ import beerHome from "../../assets/portfolio/beer/beer-home.png";
 import beerList from "../../assets/portfolio/beer/beer-list.png";
 import beerToast from "../../assets/portfolio/beer/beer-toast.png";
 
+//risk
+import riskDiagram from "../../assets/portfolio/risk/risk-diagram.png";
+//reOff
+import reOffDiagram from "../../assets/portfolio/reOff/reOff-diagram.png";
+
 import { useState } from "react";
 import PortfolioSlide from "../../components/PortfolioSlide";
 
@@ -126,7 +131,62 @@ const Portfolio = () => {
           </Swiper>
         </ContainerStack>
       ) : (
-        <div></div>
+        <ContainerStack>
+          <Swiper
+            effect={"coverflow"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            slidesPerView={1}
+            centeredSlides={true}
+            grabCursor={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <PortfolioSlide
+                imgPortfolio={riskDiagram}
+                title="Classificação de Risco e Saúde Mental API"
+                techs="Typescript, Node.js, Express, PostgreSQL, Jest"
+                services="Code, API REST"
+                date="Junho/2022"
+                description="API criada para suprir as necessidades de um sistema para teleatendimento 
+                de gestão de risco clínico, tendo por objetivo estabelecer prioridades para o atendimento 
+                dos pacientes de saúde mental que acessam o sistema de saúde e também definir o recurso 
+                assistencial mais adequado a cada caso. Tem como principal objetivo a identificação dos 
+                casos mais graves, permitindo um atendimento mais rápido e seguro de acordo com o 
+                potencial de risco, agravos à saúde ou grau de sofrimento."
+                github="https://github.com/rafaelocdev/classificacao-risco-saude-mental"
+                deploy="https://api-risco-saude-mental.herokuapp.com"
+                carousel={[riskDiagram]}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PortfolioSlide
+                imgPortfolio={reOffDiagram}
+                title="ReOff API"
+                techs="Python, Flask, PostgreSQL"
+                services="Code, API REST"
+                date="Maio/2022"
+                description="O objetivo da aplicacao é de facilitar e auxiliar no aluguel
+                 de insumos e salas. Utilizando a metodologia de troca, 
+                 a aplicacao é capaz de conectar pessoas que possuem produtos ou salas disponiveis 
+                 para aluguel aquelas que estao a procura."
+                github="https://github.com/ainemota/capstone"
+                deploy="https://reoff.herokuapp.com/"
+                carousel={[reOffDiagram]}
+              />
+            </SwiperSlide>
+          </Swiper>
+        </ContainerStack>
       )}
     </Container>
   );
