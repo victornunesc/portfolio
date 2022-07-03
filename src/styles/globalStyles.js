@@ -81,6 +81,13 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.3em;
       }
     }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      
 `;
 
 export default GlobalStyle;
