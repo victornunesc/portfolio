@@ -13,12 +13,10 @@ import {
 import { useState } from "react";
 
 import Modal from "react-modal";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-// import required modules
 import { Pagination } from "swiper";
 
 const PortfolioSlide = ({

@@ -27,7 +27,7 @@ import HTML from "../../assets/skills/html-5.png";
 
 const About = () => {
   return (
-    <Container>
+    <Container id="Home">
       <Title>Olá! Prazer em ver você por aqui!</Title>
       <Section>
         <figure>

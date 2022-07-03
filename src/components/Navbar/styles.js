@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { MdOutlineLightMode, MdOutlineNightlight } from "react-icons/md";
 
@@ -30,7 +29,7 @@ export const NavbarContainer = styled.div`
   max-width: 768px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
   color: #fff;
   justify-content: center;
   cursor: pointer;

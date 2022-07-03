@@ -20,20 +20,49 @@ const Navbar = ({ toggle }) => {
 
   return (
     <Nav>
-      <NavLogo to="/">Victor Nunes C.</NavLogo>
+      <NavLogo to="Home" smooth={true} offset={-80} duration={500}>
+        Victor Nunes C.
+      </NavLogo>
       <NavbarContainer>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks to="about">Quem sou</NavLinks>
+            <NavLinks
+              activeClass="active"
+              to="Home"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              Quem sou
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="discover">Portfólio</NavLinks>
+            <NavLinks
+              activeClass="active"
+              to="Portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Portfólio
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="services">Contato</NavLinks>
+            <NavLinks
+              activeClass="active"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contato
+            </NavLinks>
           </NavItem>
         </NavMenu>
       </NavbarContainer>

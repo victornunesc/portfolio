@@ -20,13 +20,37 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            activeClass="active"
+            to="Home"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            onClick={toggle}
+          >
             Quem sou
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
+          <SidebarLink
+            activeClass="active"
+            to="Portfolio"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={toggle}
+          >
             Portfólio
           </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
+          <SidebarLink
+            activeClass="active"
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            onClick={toggle}
+          >
             Contato
           </SidebarLink>
         </SidebarMenu>

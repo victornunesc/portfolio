@@ -5,6 +5,7 @@ import { useTheme } from "./providers/ThemeContext";
 import GlobalStyle from "./styles/globalStyles";
 import { themes } from "./styles/themes";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 
 function App() {
   const { currentTheme } = useTheme();
@@ -16,6 +17,7 @@ function App() {
         <Home />
         <About />
         <Portfolio />
+        <Contact />
       </ThemeProvider>
     </>
   );
