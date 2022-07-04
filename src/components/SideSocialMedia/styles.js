@@ -4,10 +4,18 @@ export const ContainerSocial = styled.nav`
   position: fixed;
   top: 300px;
 
+  button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
   ul {
     padding: 0px;
     transform: translate(-270px, 0);
   }
+
   ul li {
     display: block;
     margin: 5px;
@@ -26,7 +34,7 @@ export const ContainerSocial = styled.nav`
     color: #000;
   }
   ul li:hover i {
-    color: #fff;
+    color: #c22e18;
     background: rgba(0, 0, 0, 0.36);
     transform: rotate(360deg);
     transition: all 1s;

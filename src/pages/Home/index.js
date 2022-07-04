@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
-import SocialMedia from "../../components/SocialMedia";
+import SocialMedia from "../../components/SideSocialMedia";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);

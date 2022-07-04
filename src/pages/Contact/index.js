@@ -11,11 +11,13 @@ import {
   Title,
 } from "./styles";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import ContactSocialMedia from "../../components/ContactSocialMedia";
 
 const Contact = () => {
   const form = useRef();
+  const [subject, setSubject] = useState("DEFAULT");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -41,6 +43,11 @@ const Contact = () => {
     <Container id="Contact">
       <hr />
       <h1>Contato</h1>
+      <p>
+        Ficou interessado em meu trabalho? Sinta-se a vontade para entrar em
+        contato! Adoraria poder conversar melhor com você.
+      </p>
+      <ContactSocialMedia />
       <form ref={form} onSubmit={sendEmail} id="contact_form">
         <div className="name">
           <label htmlFor="name"></label>
@@ -78,14 +85,22 @@ const Contact = () => {
             placeholder="Objetivo"
             name="subject"
             id="subject_input"
+            onChange={(e) => setSubject(e.target.value)}
+            value={subject}
             required
           >
-            <option disabled hidden selected>
+            <option hidden value="Gostaria de...">
               Gostaria de...
             </option>
-            <option>Gostaria de fazer uma pergunta</option>
-            <option>Gostaria de fazer uma proposta</option>
-            <option>Gostaria de iniciar um projeto</option>
+            <option value="Gostaria de fazer uma pergunta">
+              Gostaria de fazer uma pergunta
+            </option>
+            <option value="Gostaria de fazer uma proposta">
+              Gostaria de fazer uma proposta
+            </option>
+            <option value="Gostaria de iniciar um projeto">
+              Gostaria de iniciar um projeto
+            </option>
           </select>
         </div>
         <div className="message">

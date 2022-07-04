@@ -35,7 +35,7 @@ export const Container = styled.div`
   textarea {
     background: none;
     border: none;
-    border-bottom: solid 2px ${(props) => props.theme.color};
+    border-bottom: solid 1px ${(props) => props.theme.color};
     color: ${(props) => props.theme.color};
     font-size: 1em;
     font-weight: 400;
@@ -98,7 +98,6 @@ export const Container = styled.div`
 
   textarea {
     line-height: 150%;
-    height: 150px;
     resize: none;
     width: 100%;
   }
@@ -160,7 +159,6 @@ export const Container = styled.div`
   textarea {
     color: ${(props) => props.theme.color};
     font: inherit;
-    margin: 0em 0 1.875em 0;
   }
 
   input {
@@ -222,6 +220,7 @@ export const Container = styled.div`
     select,
     textarea {
       font-size: 0.875em;
+      margin: 0em 0 0.875em 0;
     }
   }
 `;
