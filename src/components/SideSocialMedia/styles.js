@@ -33,6 +33,11 @@ export const ContainerSocial = styled.nav`
   ul li:hover a {
     color: #000;
   }
+
+  a:visited {
+    color: #000;
+  }
+
   ul li:hover i {
     color: #c22e18;
     background: rgba(0, 0, 0, 0.36);

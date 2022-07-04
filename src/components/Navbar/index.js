@@ -1,4 +1,5 @@
 import React from "react";
+import toast from "react-hot-toast";
 import { FaBars } from "react-icons/fa";
 import { useTheme } from "../../providers/ThemeContext";
 import {
@@ -17,6 +18,32 @@ import {
 
 const Navbar = ({ toggle }) => {
   const { setCurrentTheme, getOpositeTheme, currentTheme } = useTheme();
+
+  const switchTheme = () => {
+    setCurrentTheme(getOpositeTheme());
+
+    if (currentTheme === "Light") {
+      toast("Hello darkness my old friend! 🎶", {
+        icon: "👏",
+        style: {
+          borderRadius: "10px",
+          border: "1px solid #333",
+          background: "#f2f2f2",
+          color: "#333",
+        },
+      });
+    } else {
+      toast("Light My Fire! 🎶", {
+        icon: "👏",
+        style: {
+          borderRadius: "10px",
+          border: "1px solid #f2f2f2",
+          background: "#333",
+          color: "#fff",
+        },
+      });
+    }
+  };
 
   return (
     <Nav>
@@ -67,8 +94,12 @@ const Navbar = ({ toggle }) => {
         </NavMenu>
       </NavbarContainer>
       <NavBtn>
-        <NavBtnLink onClick={() => setCurrentTheme(getOpositeTheme())}>
-          {currentTheme === "Light" ? <ThemeIconNight /> : <ThemeIconLight />}
+        <NavBtnLink onClick={() => switchTheme()}>
+          {currentTheme === "Light" ? (
+            <ThemeIconNight id="dark" />
+          ) : (
+            <ThemeIconLight id="light" />
+          )}
         </NavBtnLink>
       </NavBtn>
     </Nav>

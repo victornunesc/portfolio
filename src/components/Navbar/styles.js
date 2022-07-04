@@ -99,6 +99,10 @@ export const NavBtn = styled.nav`
 
 export const ThemeIconLight = styled(MdOutlineLightMode)`
   color: var(--color-primary-light);
+
+  &:hover {
+    color: black;
+  }
 `;
 
 export const ThemeIconNight = styled(MdOutlineNightlight)`
@@ -125,6 +129,10 @@ export const NavBtnLink = styled.div`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
+    color: #010606;
+  }
+
+  &:hover > #light {
     color: #010606;
   }
 `;

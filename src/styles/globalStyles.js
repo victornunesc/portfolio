@@ -93,8 +93,6 @@ const GlobalStyle = createGlobalStyle`
         color: "#010606";
         text-decoration: none;
       }
-
-      
 `;
 
 export default GlobalStyle;
