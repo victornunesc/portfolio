@@ -9,18 +9,18 @@ const SocialMedia = () => {
       />
       <ContainerSocial>
         <ul>
-          <li>
+          {/* <li>
             <a href="https://twitter.com/" target="_blank" rel="noreferrer">
               Twitter <i class="fa fa-twitter"></i>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://github.com/victornunesc"
               target="_blank"
               rel="noreferrer"
             >
-              Github <i class="fa fa-github"></i>
+              Github <i className="fa fa-github"></i>
             </a>
           </li>
           <li>
@@ -29,7 +29,7 @@ const SocialMedia = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Linkedin <i class="fa fa-linkedin"></i>
+              Linkedin <i className="fa fa-linkedin"></i>
             </a>
           </li>
         </ul>

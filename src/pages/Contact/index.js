@@ -11,25 +11,47 @@ import {
   Title,
 } from "./styles";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i2fitm5",
+        "template_yzw4cb9",
+        form.current,
+        "Rz80JxZ6bnVmWFYCg"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <Container id="Contact">
       <Title>Contato</Title>
       <Section>
-        <AboutMe>
-          <AboutText>
-            Me chamo Victor Nunes, trabalho com desenvolvimento de software,
-            entusiasta em UX. Especialista em Aplicativos e Games com mais de 12
-            anos de experiência em mídias interativas. Possuo experiência com
-            equipes multinacionais, além de certificação compatível e 4 prêmios
-            de reconhecimento nacional junto à Funbites Games Studio.
-          </AboutText>
-          <AboutText>
-            Trabalho com desenvolvimento iOS há 8 anos e tenho mais de 20
-            aplicativos publicados na App Store. Atualmente atuo na X-team e
-            compartilho conteúdo no canal Attekita Dev.
-          </AboutText>
-        </AboutMe>
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Numero</label>
+          <input type="text" name="user_number" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
       </Section>
     </Container>
   );

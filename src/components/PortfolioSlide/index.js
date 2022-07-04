@@ -88,7 +88,7 @@ const PortfolioSlide = ({
             >
               {carousel?.map((image, key) => (
                 <SwiperSlide key={key}>
-                  <img src={image} alt="asd" />
+                  <img src={image} alt={title} />
                 </SwiperSlide>
               ))}
             </Swiper>
