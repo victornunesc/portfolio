@@ -39,20 +39,70 @@ const Contact = () => {
 
   return (
     <Container id="Contact">
-      <Title>Contato</Title>
-      <Section>
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Numero</label>
-          <input type="text" name="user_number" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
-      </Section>
+      <hr />
+      <h1>&bull; Contato &bull;</h1>
+      <form ref={form} onSubmit={sendEmail} id="contact_form">
+        <div className="name">
+          <label htmlFor="name"></label>
+          <input
+            type="text"
+            placeholder="Meu nome"
+            name="user_name"
+            id="name_input"
+            required
+          />
+        </div>
+        <div className="email">
+          <label htmlFor="email"></label>
+          <input
+            type="email"
+            placeholder="Meu e-mail"
+            name="user_email"
+            id="email_input"
+            required
+          />
+        </div>
+        <div className="telephone">
+          <label htmlFor="name"></label>
+          <input
+            type="text"
+            placeholder="Meu número"
+            name="user_number"
+            id="telephone_input"
+            required
+          />
+        </div>
+        <div className="subject">
+          <label htmlFor="subject"></label>
+          <select
+            placeholder="Objetivo"
+            name="subject"
+            id="subject_input"
+            required
+          >
+            <option disabled hidden selected>
+              Gostaria de...
+            </option>
+            <option>Gostaria de fazer uma pergunta</option>
+            <option>Gostaria de fazer uma proposta</option>
+            <option>Gostaria de iniciar um projeto</option>
+          </select>
+        </div>
+        <div className="message">
+          <label htmlFor="message"></label>
+          <textarea
+            name="message"
+            placeholder="Escreva aqui"
+            id="message_input"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div className="submit">
+          <input type="submit" value="Send" id="form_button" />
+        </div>
+      </form>
     </Container>
   );
 };
