@@ -73,6 +73,14 @@ export const Title = styled.h2`
   }
 `;
 
+export const TitleSkills = styled.h1`
+  color: ${(props) => props.theme.color};
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+`;
+
 export const IconDiv = styled.div`
   display: flex;
   align-items: center;

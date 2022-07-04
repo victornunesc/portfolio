@@ -9,6 +9,7 @@ import {
   DescriptionProfile,
   AboutText,
   Title,
+  TitleSkills,
 } from "./styles";
 import Profile from "../../assets/example-perfil.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -54,7 +55,7 @@ const About = () => {
       </Section>
 
       <hr />
-      <Title>Skills</Title>
+      <TitleSkills>&#1645;&#9733; Skills &#9733;&#1645;</TitleSkills>
       <div>
         <Swiper
           spaceBetween={30}

@@ -62,15 +62,22 @@ const GlobalStyle = createGlobalStyle`
       }
     }
 
-    h2 {
-      font-family: "Playfair Display", serif;
+    h1 {
       font-weight: bold;
       font-size: 1em;
 
       @media screen and (min-width: 769px) {
         font-size: 1.6em;
       }
-    }
+      
+      @media screen and (max-width: 480px) {
+        font-size: 26px;
+      }
+
+      @media screen and (max-width: 420px) {
+        font-size: 18px;
+      }
+  }
 
     h3 {
       font-family: "Playfair Display", serif;

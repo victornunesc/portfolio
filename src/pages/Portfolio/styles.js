@@ -13,10 +13,12 @@ export const Container = styled.div`
   justify-content: space-evenly;
 `;
 
-export const Title = styled.h2`
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-size: 1.6em;
+export const Title = styled.h1`
+  color: ${(props) => props.theme.color};
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
 `;
 
 export const ContainerStack = styled.div`

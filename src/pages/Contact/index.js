@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <Container id="Contact">
       <hr />
-      <h1>&bull; Contato &bull;</h1>
+      <h1>Contato</h1>
       <form ref={form} onSubmit={sendEmail} id="contact_form">
         <div className="name">
           <label htmlFor="name"></label>
@@ -100,7 +100,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="submit">
-          <input type="submit" value="Send" id="form_button" />
+          <input type="submit" value="Enviar" id="form_button" />
         </div>
       </form>
     </Container>
