@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 
     if (currentTheme === "Light") {
       toast("Hello darkness! 🎶", {
-        icon: "👏",
+        icon: "👋",
         position: "bottom-center",
         style: {
           borderRadius: "10px",
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       });
     } else {
       toast("Light My Fire! 🎶", {
-        icon: "👏",
+        icon: "🔥",
         position: "bottom-center",
         style: {
           borderRadius: "10px",

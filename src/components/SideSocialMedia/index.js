@@ -1,6 +1,13 @@
+import toast from "react-hot-toast";
 import { ContainerSocial } from "./styles";
 
 const SocialMedia = () => {
+  const copy = () => {
+    navigator.clipboard.writeText("victornunesc95@gmail.com");
+
+    toast.success("Copiado!", { position: "top-center" });
+  };
+
   return (
     <>
       {/* TROCAR PARA UM LINK PESSOAL */}
@@ -35,6 +42,7 @@ const SocialMedia = () => {
               href="3"
               className="g-plus"
               title="victornunesc95@gmail.com"
+              onClick={() => copy()}
             >
               Google+ <i className="fa fa-google-plus" aria-hidden="true"></i>
             </button>

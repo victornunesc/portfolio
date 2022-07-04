@@ -14,6 +14,7 @@ import {
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactSocialMedia from "../../components/ContactSocialMedia";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
@@ -31,10 +32,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result);
+          toast.success("Mensagem enviada!", { position: "top-center" });
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Algo deu errado!", { position: "top-center" });
         }
       );
   };

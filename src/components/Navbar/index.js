@@ -24,7 +24,7 @@ const Navbar = ({ toggle }) => {
 
     if (currentTheme === "Light") {
       toast("Hello darkness my old friend! 🎶", {
-        icon: "👏",
+        icon: "👋",
         style: {
           borderRadius: "10px",
           border: "1px solid #333",
@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
       });
     } else {
       toast("Light My Fire! 🎶", {
-        icon: "👏",
+        icon: "🔥",
         style: {
           borderRadius: "10px",
           border: "1px solid #f2f2f2",

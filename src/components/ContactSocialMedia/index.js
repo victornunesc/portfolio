@@ -5,15 +5,7 @@ export const ContactSocialMedia = () => {
   const copy = () => {
     navigator.clipboard.writeText("victornunesc95@gmail.com");
 
-    toast("Hello darkness my old friend! 🎶", {
-      icon: "👏",
-      style: {
-        borderRadius: "10px",
-        border: "1px solid #333",
-        background: "#f2f2f2",
-        color: "#333",
-      },
-    });
+    toast.success("Copiado!", { position: "top-center" });
   };
 
   return (
@@ -41,9 +33,7 @@ export const ContactSocialMedia = () => {
           <button
             className="g-plus"
             title="victornunesc95@gmail.com"
-            onClick={() =>
-              navigator.clipboard.writeText("victornunesc95@gmail.com")
-            }
+            onClick={() => copy()}
           >
             <i className="fa fa-google-plus" aria-hidden="true"></i>
           </button>
