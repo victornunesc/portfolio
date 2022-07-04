@@ -34,22 +34,25 @@ const About = () => {
         <figure>
           <ProfileImage src={Profile} alt="Foto de perfil" />
           <DescriptionProfile>
-            "Combata funcionalidades… a única forma de fazer software seguro,
-            confiável e rápido é faze-lo pequeno.“
+            "Truth can only be found in one place: the code.“
           </DescriptionProfile>
         </figure>
         <AboutMe>
           <AboutText>
-            Me chamo Victor Nunes, trabalho com desenvolvimento de software,
-            entusiasta em UX. Especialista em Aplicativos e Games com mais de 12
-            anos de experiência em mídias interativas. Possuo experiência com
-            equipes multinacionais, além de certificação compatível e 4 prêmios
-            de reconhecimento nacional junto à Funbites Games Studio.
+            Me chamo Victor Nunes e minha trajetória profissional começou
+            através da música onde me dediquei por mais de 10 anos tocando em
+            diversos locais e conhecendo diversas pessoas! Em paralelo à
+            carreira de musicista me formei em Administração, cheguei a ter
+            vários tipos de trabalhos e hoje dedico 100% do meu tempo na arte da
+            programação!
           </AboutText>
           <AboutText>
-            Trabalho com desenvolvimento iOS há 8 anos e tenho mais de 20
-            aplicativos publicados na App Store. Atualmente atuo na X-team e
-            compartilho conteúdo no canal Attekita Dev.
+            Faz um pouco mais de um ano que venho me aprofundando em
+            desenvolvimento de softwares tanto de tecnologias relacionadas ao
+            Front-end quanto ao Back-end. Gosto de ler sobre Clean Code,
+            Arquitetura de Softwares, Design Patterns, TDD e outros
+            conceitos/técnicas que fazem de mim um programador melhor a cada
+            dia!
           </AboutText>
         </AboutMe>
       </Section>

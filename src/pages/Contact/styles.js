@@ -178,7 +178,7 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 480px), (max-height: 700px) {
     h1 {
       font-size: 26px;
     }
@@ -196,7 +196,7 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 420px), (max-height: 700px) {
     h1 {
       font-size: 18px;
     }

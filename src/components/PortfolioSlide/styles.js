@@ -40,7 +40,7 @@ export const PortfolioImage = styled.img`
   height: 265px;
 
   @media screen and (min-width: 769px) and (min-height: 628px),
-    (min-height: 628px) {
+    (min-height: 700px) {
     display: block;
   }
 `;

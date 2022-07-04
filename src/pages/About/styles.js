@@ -19,6 +19,10 @@ export const Section = styled.section`
   max-height: 100%;
   overflow-y: scroll;
 
+  figure {
+    padding-top: 12px;
+  }
+
   @media screen and (min-width: 769px) {
     overflow: auto;
     flex-direction: row;
@@ -29,6 +33,7 @@ export const ProfileImage = styled.img`
   display: none;
   width: 224px;
   height: 275px;
+  border: 1px solid ${(props) => props.theme.color};
 
   @media screen and (min-width: 769px) {
     display: block;
@@ -38,7 +43,7 @@ export const ProfileImage = styled.img`
 export const DescriptionProfile = styled.figcaption`
   font-family: "Gentium Book Plus", serif;
   font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
 
   @media screen and (max-width: 769px) {
     display: none;
@@ -54,7 +59,6 @@ export const AboutMe = styled.div`
 `;
 
 export const AboutText = styled.p`
-  font-family: "Syne Mono", monospace;
   font-size: 0.8em;
   padding: 12px;
 

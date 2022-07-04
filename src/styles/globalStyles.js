@@ -53,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     p {
-      font-family: "Syne Mono", monospace;
+      font-family: "Georgia,Cambria,Times New Roman,Times,serif";
       font-size: 0.8em;
       padding: 12px;
 
