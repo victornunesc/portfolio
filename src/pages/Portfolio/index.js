@@ -73,11 +73,10 @@ const Portfolio = () => {
                 techs="React, Chakra.ui, Typescript, JSON Server"
                 services="Code, UI/UX, Fake REST API"
                 date="Fevereiro/2022"
-                description="Projeto feito em equipe para o Capstone de React na Kenzie Academy.
-                Desempenhei o papel de Tech Lead sendo algumas de minhas
-                atribuições manter a qualidade e padronização do código. O site tem o objetivo de servir como intermediário entre coletores e
+                description="O site tem o objetivo de servir como intermediário entre coletores e
                 doadores de óleo de cozinha de forma adiminuir a poluição causada pelo
-                descarte irregular"
+                descarte irregular com incentivos a doações através de um modelo ganha-ganha onde o usuário
+                pode trocar seu óleo reciclado por produtos parceiros dentro da plataforma"
                 github="https://github.com/victornunesc/Oil-Cycle"
                 deploy="https://oil-cycle.vercel.app/"
                 carousel={[
