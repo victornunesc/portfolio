@@ -27,7 +27,7 @@ export const ContainerStack = styled.div`
   justify-content: center;
 
   .mySwiper {
-    max-height: 100%;
+    max-height: 477px;
   }
 `;
 

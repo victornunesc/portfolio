@@ -66,7 +66,7 @@ const Portfolio = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide style={{ height: "509px" }}>
+            <SwiperSlide>
               <PortfolioSlide
                 imgPortfolio={oilCycleHome}
                 title="Oil Cycle"
@@ -148,7 +148,7 @@ const Portfolio = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide style={{ height: "509px" }}>
+            <SwiperSlide>
               <PortfolioSlide
                 imgPortfolio={riskDiagram}
                 title="Classificação de Risco e Saúde Mental API"
