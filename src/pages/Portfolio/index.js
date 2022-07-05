@@ -96,10 +96,8 @@ const Portfolio = () => {
                 techs="React, Styled-components, Javascript"
                 services="Code, UI/UX, Integração com APIs externa"
                 date="Dezembro/2021"
-                description="Projeto feito em equipe na Kenzie Academy.
-                O objetivo da plataforma é que o usuário faça cadastro e consiga gerir seus hábitos, 
-                e participar de grupos com outras pessoas com a mesma categoria de hábitos e metas. 
-                Fui escolhido como Tech Lead do projeto"
+                description="O objetivo da plataforma é que o usuário faça cadastro e consiga gerir seus hábitos, 
+                e participar de grupos com outras pessoas com a mesma categoria de hábitos e metas."
                 github="https://github.com/victornunesc/WeDo"
                 deploy={"https://we-do.vercel.app/"}
                 carousel={[

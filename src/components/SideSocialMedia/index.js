@@ -10,11 +10,6 @@ const SocialMedia = () => {
 
   return (
     <>
-      {/* TROCAR PARA UM LINK PESSOAL */}
-      <link
-        href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-        rel="stylesheet"
-      />
       <ContainerSocial>
         <ul>
           <li>

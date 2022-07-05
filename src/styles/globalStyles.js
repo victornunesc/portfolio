@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 12px;
 
       @media screen and (min-width: 769px) {
-        font-size: 1em;
+        font-size: 17px;
       }
     }
 
