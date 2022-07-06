@@ -6,6 +6,7 @@ export const Section = styled.section`
   width: 80%;
   justify-content: center;
   margin: 15px;
+  align-items: center;
 
   ul {
     column-count: 2;
