@@ -45,9 +45,8 @@ const Portfolio = () => {
             className="mySwiper"
           >
             {frontEnd.map((project) => (
-              <SwiperSlide>
+              <SwiperSlide key={project.key}>
                 <PortfolioSlide
-                  key={project.key}
                   imgPortfolio={project.image}
                   title={project.title}
                   techs={project.techs}
@@ -84,9 +83,8 @@ const Portfolio = () => {
             className="mySwiper"
           >
             {backEnd.map((project) => (
-              <SwiperSlide>
+              <SwiperSlide key={project.key}>
                 <PortfolioSlide
-                  key={project.key}
                   imgPortfolio={project.image}
                   title={project.title}
                   techs={project.techs}
