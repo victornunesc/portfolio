@@ -35,7 +35,7 @@ export const ContactSocialMedia = () => {
             title="victornunesc95@gmail.com"
             onClick={() => copy()}
           >
-            <i className="fa fa-google-plus" aria-hidden="true"></i>
+            <i className="fa fa-envelope" aria-hidden="true"></i>
           </button>
         </div>
       </div>

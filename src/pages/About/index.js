@@ -18,13 +18,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-import Python from "../../assets/skills/python.png";
-import Javascript from "../../assets/skills/js.png";
-import CSS from "../../assets/skills/css-3.png";
-import React from "../../assets/skills/react.png";
-import Nodejs from "../../assets/skills/nodejs.png";
-import Typescript from "../../assets/skills/typescript.png";
-import HTML from "../../assets/skills/html-5.png";
+import { skills } from "../../utils/skills";
 
 const About = () => {
   return (
@@ -76,48 +70,14 @@ const About = () => {
           className="mySwiper"
           breakpoints={{ 768: { slidesPerView: 5 } }}
         >
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={Python} alt="Python Icone" />
-              <DescriptionSkills>Python (Flask, Django)</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={Javascript} alt="Javascript Icone" />
-              <DescriptionSkills>Javascript</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={CSS} alt="CSS Icone" />
-              <DescriptionSkills>CSS</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={Typescript} alt="Typescript Icone" />
-              <DescriptionSkills>Typescript</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={React} alt="React Icone" />
-              <DescriptionSkills>React</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={Nodejs} alt="Node.js Icone" />
-              <DescriptionSkills>Node.js (Express)</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
-          <SwiperSlide>
-            <IconDiv>
-              <SkillIcon src={HTML} alt="HTML Icone" />
-              <DescriptionSkills>HTML</DescriptionSkills>
-            </IconDiv>
-          </SwiperSlide>
+          {skills.map((skill) => (
+            <SwiperSlide key={skill.key}>
+              <IconDiv>
+                <SkillIcon src={skill.icon} alt={skill.alt} />
+                <DescriptionSkills>{skill.description}</DescriptionSkills>
+              </IconDiv>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <hr />

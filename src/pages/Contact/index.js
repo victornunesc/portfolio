@@ -1,15 +1,4 @@
-import {
-  Container,
-  Section,
-  ProfileImage,
-  AboutMe,
-  DescriptionSkills,
-  IconDiv,
-  SkillIcon,
-  DescriptionProfile,
-  AboutText,
-  Title,
-} from "./styles";
+import { Container } from "./styles";
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";

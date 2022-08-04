@@ -39,7 +39,7 @@ const SocialMedia = () => {
               title="victornunesc95@gmail.com"
               onClick={() => copy()}
             >
-              Google+ <i className="fa fa-google-plus" aria-hidden="true"></i>
+              E-mail <i className="fa fa-envelope" aria-hidden="true"></i>
             </button>
           </li>
         </ul>
