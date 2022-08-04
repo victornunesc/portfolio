@@ -23,9 +23,12 @@ import riskDiagram from "../assets/portfolio/risk/risk-diagram.png";
 //reOff-back
 import reOffDiagram from "../assets/portfolio/reOff/reOff-diagram.png";
 
+//pet-back
+import petDiagram from "../assets/portfolio/petcheck/pet-diagram.png";
+
 export const frontEnd = [
   {
-    key: 0,
+    key: 2,
     image: oilCycleHome,
     title: "Oil Cycle",
     techs: "React, Chakra.ui, Typescript, JSON Server",
@@ -63,7 +66,7 @@ export const frontEnd = [
     ],
   },
   {
-    key: 2,
+    key: 0,
     image: beerHome,
     title: "Administração de bebidas",
     techs: "React, Styled-components, Javascript",
@@ -80,7 +83,20 @@ export const frontEnd = [
 
 export const backEnd = [
   {
-    key: 0,
+    key: 2,
+    image: petDiagram,
+    title: "Clínica Veterinária API",
+    techs: "Python, Django, PostgreSQL",
+    services: "Code, API REST",
+    date: "Julho/2022",
+    description:
+      "Criada com o intuito de servir clinicas veterinarias sendo possivel cadastrar empregados, clientes, pets, consultas, anamnese, diagnósticos, histórico, controle de vacinas etc.",
+    git: "https://github.com/YasminMartinsDeBrito/clinic_pet",
+    deploy: "https://pet-clinic-kenzie.herokuapp.com/",
+    carousel: [petDiagram],
+  },
+  {
+    key: 1,
     image: riskDiagram,
     title: "Classificação de Risco e Saúde Mental API",
     techs: "Typescript, Node.js, Express, PostgreSQL, Jest",
@@ -93,7 +109,7 @@ export const backEnd = [
     carousel: [riskDiagram],
   },
   {
-    key: 1,
+    key: 0,
     image: reOffDiagram,
     title: "ReOff API",
     techs: "Python, Flask, PostgreSQL",
