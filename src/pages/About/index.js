@@ -41,11 +41,10 @@ const About = () => {
             programação!
           </AboutText>
           <AboutText>
-            Faz mais de um ano que venho me aprofundando em desenvolvimento de
+            Estou há mais de dois anos trabalhando com desenvolvimento de
             softwares tanto de tecnologias relacionadas ao Front-end quanto ao
-            Back-end. Gosto de ler sobre Clean Code, Arquitetura de Softwares,
-            Design Patterns, TDD e outros conceitos/técnicas que fazem de mim um
-            programador melhor a cada dia!
+            Back-end. Gosto de ler sobre Clean Code, Arquitetura de Softwares, cultura DevSecOps,
+            Design Patterns, TDD e outros conceitos/técnicas que fazem evoluir a cada dia!
           </AboutText>
         </AboutMe>
       </Section>
