@@ -67,7 +67,7 @@ const Navbar = ({ toggle }) => {
               offset={-80}
               duration={500}
             >
-              {t("home.message")}
+              {t("navbar.aboutMe")}
             </NavLinks>
           </NavItem>
           <NavItem>

@@ -1,7 +1,7 @@
-import ptBrTranslations from "./pt-BR";
-import enUsTranslations from "./en-US";
+import ptBrTranslations from "./pt-BR.json";
+import enUsTranslations from "./en-US.json";
 
 export const resources = {
-  "pt-BR": ptBrTranslations,
-  "en-US": enUsTranslations,
+  "pt-BR": { translation: ptBrTranslations },
+  "en-US": { translation: enUsTranslations },
 };
