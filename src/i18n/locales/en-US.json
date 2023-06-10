@@ -1,5 +1,7 @@
 {
   "navbar": {
-    "aboutMe": "About me"
+    "aboutMe": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
   }
 }

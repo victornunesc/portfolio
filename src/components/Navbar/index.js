@@ -79,7 +79,7 @@ const Navbar = ({ toggle }) => {
               offset={-70}
               duration={500}
             >
-              Portfólio
+              {t("navbar.portfolio")}
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
               offset={-70}
               duration={500}
             >
-              Contato
+              {t("navbar.contact")}
             </NavLinks>
           </NavItem>
         </NavMenu>
