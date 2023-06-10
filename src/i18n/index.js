@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 import { resources } from "./locales";
 
 const i18nConfig = {
-  resources: resources,
+  resources: { translations: resources },
   fallbackLng: "pt-BR",
   defaultNS: "translations",
 };

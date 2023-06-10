@@ -1,5 +1,5 @@
-import { ptBrTranslations } from "./pt-br";
-import { enUsTranslations } from "./en-us";
+import ptBrTranslations from "./pt-BR";
+import enUsTranslations from "./en-US";
 
 export const resources = {
   "pt-BR": ptBrTranslations,
