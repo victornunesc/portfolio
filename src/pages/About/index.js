@@ -19,33 +19,24 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 import { skills } from "../../utils/skills";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <Container id="Home">
-      <Title>Olá! Prazer em ver você por aqui!</Title>
+      <Title>{t("home.title")}</Title>
       <Section>
         <figure>
           <ProfileImage src={Profile} alt="Foto de perfil" />
           <DescriptionProfile>
-            "Truth can only be found in one place: the code.“
+            {t("home.descriptionProfile")}
           </DescriptionProfile>
         </figure>
         <AboutMe>
-          <AboutText>
-            Me chamo Victor Nunes e minha trajetória profissional começou
-            através da música onde me dediquei por mais de 10 anos tocando em
-            diversos locais e conhecendo diversas pessoas! Em paralelo à
-            carreira de musicista me formei em Administração, cheguei a ter
-            vários tipos de trabalhos e hoje dedico 100% do meu tempo na arte da
-            programação!
-          </AboutText>
-          <AboutText>
-            Estou há mais de dois anos trabalhando com desenvolvimento de
-            softwares tanto de tecnologias relacionadas ao Front-end quanto ao
-            Back-end. Gosto de ler sobre Clean Code, Arquitetura de Softwares, cultura DevSecOps,
-            Design Patterns, TDD e outros conceitos/técnicas que fazem evoluir a cada dia!
-          </AboutText>
+          <AboutText>{t("home.aboutMe")}</AboutText>
+          <AboutText>{t("home.aboutMe2")}</AboutText>
         </AboutMe>
       </Section>
 

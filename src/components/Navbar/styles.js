@@ -113,6 +113,7 @@ export const NavBtnLink = styled.div`
   width: 40px;
   height: 40px;
   display: flex;
+  margin-right: 7px;
   justify-content: center;
   align-items: center;
   border-radius: 50px;

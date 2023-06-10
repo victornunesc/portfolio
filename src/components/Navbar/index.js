@@ -15,9 +15,12 @@ import {
   ThemeIconLight,
   ThemeIconNight,
 } from "./styles";
+import { useTranslation } from "react-i18next";
+import I18n from "../I18n";
 
 const Navbar = ({ toggle }) => {
   const { setCurrentTheme, getOpositeTheme, currentTheme } = useTheme();
+  const { t } = useTranslation();
 
   const switchTheme = () => {
     setCurrentTheme(getOpositeTheme());
@@ -64,7 +67,7 @@ const Navbar = ({ toggle }) => {
               offset={-80}
               duration={500}
             >
-              Quem sou
+              {t("navbar.aboutMe")}
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -76,7 +79,7 @@ const Navbar = ({ toggle }) => {
               offset={-70}
               duration={500}
             >
-              Portfólio
+              {t("navbar.portfolio")}
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -88,7 +91,7 @@ const Navbar = ({ toggle }) => {
               offset={-70}
               duration={500}
             >
-              Contato
+              {t("navbar.contact")}
             </NavLinks>
           </NavItem>
         </NavMenu>
@@ -101,6 +104,7 @@ const Navbar = ({ toggle }) => {
             <ThemeIconLight id="light" />
           )}
         </NavBtnLink>
+        <I18n />
       </NavBtn>
     </Nav>
   );

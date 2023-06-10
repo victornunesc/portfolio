@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "aboutMe": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": " Hello! Nice to see you here!",
+    "descriptionProfile": "\"Truth can only be found in one place: the code.“",
+    "aboutMe": "My name is Victor Nunes and my professional career began through music, where I dedicated myself for more than 10 years, playing in different places and meeting different people! In parallel to my career as a musician, I graduated in Business Administration, I had several types of jobs and today I dedicate 100% of my time to the art of programming!",
+    "aboutMe2": "It's been over a year since I've been delving into software development for both front-end and back-end technologies. I like to read about Clean Code, Software Architecture, Design Patterns, TDD and other concepts/techniques that make me a better programmer every day!"
+  }
+}

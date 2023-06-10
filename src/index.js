@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import Providers from "./providers";
+import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
