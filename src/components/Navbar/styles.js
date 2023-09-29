@@ -122,7 +122,7 @@ export const NavBtnLink = styled.div`
   color: ${({ theme }) => theme.color};
   font-size: 16px;
   outline: none;
-  border: 2px solid ${({ theme }) => theme.color};
+  border: 2px solid ${({ theme }) => theme.colorText};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

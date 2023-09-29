@@ -70,6 +70,10 @@ export const Container = styled.div`
     float: none;
   }
 
+  p {
+    color: ${({ theme }) => theme.colorText};
+  }
+
   .name {
     float: left;
     width: 45%;
