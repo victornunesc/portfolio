@@ -7,7 +7,8 @@
   "home": {
     "title": " Hello! Nice to see you here!",
     "descriptionProfile": "\"Truth can only be found in one place: the code.“",
-    "aboutMe": "My name is Victor Nunes and my professional career began through music, where I dedicated myself for more than 10 years, playing in different places and meeting different people! In parallel to my career as a musician, I graduated in Business Administration, I had several types of jobs and today I dedicate 100% of my time to the art of programming!",
-    "aboutMe2": "It's been over a year since I've been delving into software development for both front-end and back-end technologies. I like to read about Clean Code, Software Architecture, Design Patterns, TDD and other concepts/techniques that make me a better programmer every day!"
+    "aboutMe": "With a diverse trajectory, my professional journey began in the world of music, where I dedicated more than a decade to improving my talents as a multi-instrumentalist. I had the opportunity to play in different places and meet incredible people. In parallel with my career as a musician, I earned my degree in Business Administration and explored several professional opportunities, including a period as an entrepreneur.",
+    "aboutMe2": "Today, I hold a postgraduate degree in Engineering and DevOps Planning, and I am fully immersed in the world of programming. I channel all my passion and creativity into creating real solutions for my clients, covering technologies that span from the Front-end to the Back-end, leveraging all the know-how I have accumulated throughout my life.",
+    "aboutMe3": "I am an avid reader of topics such as Software Architecture, Clean Code, Design Patterns, Cybersecurity, TDD, and other techniques that enrich my journey as a programmer every day. My commitment is to continually learn and grow in this exciting field alongside my professional colleagues!"
   }
 }
