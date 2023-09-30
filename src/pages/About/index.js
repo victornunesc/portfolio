@@ -37,6 +37,7 @@ const About = () => {
         <AboutMe>
           <AboutText>{t("home.aboutMe")}</AboutText>
           <AboutText>{t("home.aboutMe2")}</AboutText>
+          <AboutText>{t("home.aboutMe3")}</AboutText>
         </AboutMe>
       </Section>
 

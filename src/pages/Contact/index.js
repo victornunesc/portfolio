@@ -4,8 +4,10 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactSocialMedia from "../../components/ContactSocialMedia";
 import toast from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const form = useRef();
   const [subject, setSubject] = useState("DEFAULT");
 
@@ -32,18 +34,15 @@ const Contact = () => {
   return (
     <Container id="Contact">
       <hr />
-      <h1>Contato</h1>
-      <p>
-        Ficou interessado em meu trabalho? Sinta-se a vontade para entrar em
-        contato! Adoraria poder conversar melhor com você.
-      </p>
+      <h1>{t("contact.title")}</h1>
+      <p>{t("contact.description")}</p>
       <ContactSocialMedia />
       <form ref={form} onSubmit={sendEmail} id="contact_form">
         <div className="name">
           <label htmlFor="name"></label>
           <input
             type="text"
-            placeholder="Meu nome"
+            placeholder={t("contact.form.placeholders.myName")}
             name="user_name"
             id="name_input"
             required
@@ -53,7 +52,7 @@ const Contact = () => {
           <label htmlFor="email"></label>
           <input
             type="email"
-            placeholder="Meu e-mail"
+            placeholder={t("contact.form.placeholders.myEmail")}
             name="user_email"
             id="email_input"
             required
@@ -63,7 +62,7 @@ const Contact = () => {
           <label htmlFor="name"></label>
           <input
             type="text"
-            placeholder="Meu número"
+            placeholder={t("contact.form.placeholders.myNumber")}
             name="user_number"
             id="telephone_input"
             required
@@ -80,16 +79,16 @@ const Contact = () => {
             required
           >
             <option hidden value="Gostaria de...">
-              Gostaria de...
+              {t("contact.form.placeholders.select.default")}
             </option>
             <option value="Gostaria de fazer uma pergunta">
-              Gostaria de fazer uma pergunta
+             {t("contact.form.placeholders.select.firstOption")}
             </option>
             <option value="Gostaria de fazer uma proposta">
-              Gostaria de fazer uma proposta
+              {t("contact.form.placeholders.select.secondOption")}
             </option>
             <option value="Gostaria de iniciar um projeto">
-              Gostaria de iniciar um projeto
+              {t("contact.form.placeholders.select.thirdOption")}
             </option>
           </select>
         </div>
@@ -97,7 +96,7 @@ const Contact = () => {
           <label htmlFor="message"></label>
           <textarea
             name="message"
-            placeholder="Escreva aqui"
+            placeholder={t("contact.form.placeholders.description")}
             id="message_input"
             cols="30"
             rows="5"
@@ -105,7 +104,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="submit">
-          <input type="submit" value="Enviar" id="form_button" />
+          <input type="submit" value={t("contact.form.submit")} id="form_button" />
         </div>
       </form>
     </Container>

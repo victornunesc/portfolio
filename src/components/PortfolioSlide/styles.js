@@ -21,6 +21,7 @@ export const Section = styled.section`
   p {
     font-family: Arial;
     margin: 0px 10px;
+    color: ${({ theme }) => theme.colorText};
   }
 
   @media screen and (min-width: 769px) {

@@ -9,7 +9,7 @@ export const ContainerSocial = styled.div`
   }
 
   .effect {
-    /*display: flex; !!!uncomment this line !!!*/
+    /*display: flex; */
 
     a,
     button {
@@ -24,8 +24,8 @@ export const ContainerSocial = styled.div`
       overflow: hidden;
       position: relative;
       background-color: transparent;
-      color: ${(props) => props.theme.color}; //or change to your own color
-      border: 2px solid ${(props) => props.theme.color}; //or change to your own color
+      color: ${(props) => props.theme.color};
+      border: 2px solid ${(props) => props.theme.color};
 
       i {
         position: relative;

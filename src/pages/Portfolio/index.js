@@ -10,13 +10,15 @@ import { frontEnd, backEnd } from "../../utils/projects";
 
 import { useState } from "react";
 import PortfolioSlide from "../../components/PortfolioSlide";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
   const [isFront, setIsFront] = useState(true);
+  const { t } = useTranslation();
 
   return (
     <Container id="Portfolio">
-      <Title>Portfólio!</Title>
+      <Title>{t("portfolio.title")}</Title>
       <DivButton>
         <Button onClick={() => setIsFront(true)} blue>
           Front-end

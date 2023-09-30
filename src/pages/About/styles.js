@@ -44,6 +44,7 @@ export const DescriptionProfile = styled.figcaption`
   font-family: "Gentium Book Plus", serif;
   font-style: italic;
   font-size: 16px;
+  color: ${({ theme }) => theme.colorText};
 
   @media screen and (max-width: 769px) {
     display: none;
@@ -61,6 +62,7 @@ export const AboutMe = styled.div`
 export const AboutText = styled.p`
   font-size: 0.8em;
   padding: 12px;
+  color: ${({ theme }) => theme.colorText};
 
   @media screen and (min-width: 769px) {
     font-size: 17px;
@@ -104,4 +106,5 @@ export const SkillIcon = styled.img`
 export const DescriptionSkills = styled.span`
   text-align: center;
   padding: 8px;
+  color: ${({ theme }) => theme.colorText};
 `;
