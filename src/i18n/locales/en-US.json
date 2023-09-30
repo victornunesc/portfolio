@@ -11,6 +11,15 @@
     "aboutMe2": "Today, I hold a postgraduate degree in Engineering and DevOps Planning, and I am fully immersed in the world of programming. I channel all my passion and creativity into creating real solutions for my clients, covering technologies that span from the Front-end to the Back-end, leveraging all the know-how I have accumulated throughout my life.",
     "aboutMe3": "I am an avid reader of topics such as Software Architecture, Clean Code, Design Patterns, Cybersecurity, TDD, and other techniques that enrich my journey as a programmer every day. My commitment is to continually learn and grow in this exciting field alongside my professional colleagues!"
   },
+  "portfolio": {
+    "title": "Portfolio!",
+    "slide": {
+      "techs": "Techs used",
+      "services": "Services",
+      "date": "Date",
+      "info": "More info."
+    }
+  },
   "contact": {
     "title": "Contact",
     "description": "Are you interested in my work? Feel free to get in touch! I would love to have the opportunity to communicate with you more effectively.",

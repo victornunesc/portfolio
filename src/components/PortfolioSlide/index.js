@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { useTranslation } from "react-i18next";
 
 const PortfolioSlide = ({
   imgPortfolio,
@@ -31,6 +32,8 @@ const PortfolioSlide = ({
   carousel,
 }) => {
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const { t } = useTranslation();
+
 
   function openModal() {
     setIsOpenModal(true);
@@ -55,19 +58,19 @@ const PortfolioSlide = ({
       <Section>
         <ul>
           <li>
-            <h4>Tecnologias utilizadas</h4>
+            <h4>{t("portfolio.slide.techs")}</h4>
             <p>{techs}</p>
           </li>
           <li>
-            <h4>Serviços</h4>
+            <h4>{t("portfolio.slide.services")}</h4>
             <p>{services}</p>
           </li>
           <li>
-            <h4>Data</h4>
+            <h4>{t("portfolio.slide.date")}</h4>
             <p>{date}</p>
           </li>
           <li>
-            <h4>Mais inf.</h4>
+            <h4>{t("portfolio.slide.info")}</h4>
             <Button onClick={openModal}>Click</Button>
           </li>
         </ul>
