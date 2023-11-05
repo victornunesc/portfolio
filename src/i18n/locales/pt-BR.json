@@ -38,5 +38,8 @@
       },
       "submit": "Enviar"
     }
+  },
+  "footer": {
+    "text": "Copyright© 2022. Desenvolvido por mim =)"
   }
 }
