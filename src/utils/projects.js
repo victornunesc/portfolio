@@ -1,3 +1,6 @@
+//Space Callix
+import spaceCallix from "../assets/portfolio/spaceCallix/space-callix.png";
+
 //OilCycle-front
 import oilCycleHome from "../assets/portfolio/oilCycle/oil-cycle-home.png";
 import oilCycleDashboard from "../assets/portfolio/oilCycle/oil-cycle-dashboard.png";
@@ -26,7 +29,27 @@ import reOffDiagram from "../assets/portfolio/reOff/reOff-diagram.png";
 //pet-back
 import petDiagram from "../assets/portfolio/petcheck/pet-diagram.png";
 
+
 export const frontEnd = [
+  {
+    key: 3,
+    image: spaceCallix,
+    title: "Space CalliX",
+    techs: "React, Styled-components, Typescript",
+    services: "Code, UI/UX, Consumo de API externa/interna",
+    date: "Outubro/2022",
+    description:
+      "O site tem o objetivo de servir como intermediário entre coletores e doadores de óleo de cozinha de forma adiminuir a poluição causada pelo descarte irregular com incentivos a doações através de um modelo ganha-ganha onde o usuário pode trocar seu óleo reciclado por produtos parceiros dentro da plataforma",
+    git: "https://github.com/victornunesc/frontend-callix",
+    deploy: "https://space-callix.vercel.app/",
+    carousel: [
+      spaceCallix,
+      oilCycleRegister,
+      oilCycleMobile,
+      oilCycleDashboard,
+      oilCycleMarket,
+    ],
+  },
   {
     key: 2,
     image: oilCycleHome,
@@ -92,7 +115,6 @@ export const backEnd = [
     description:
       "Criada com o intuito de servir clinicas veterinarias sendo possivel cadastrar empregados, clientes, pets, consultas, anamnese, diagnósticos, histórico, controle de vacinas etc.",
     git: "https://github.com/YasminMartinsDeBrito/clinic_pet",
-    deploy: "https://pet-clinic-kenzie.herokuapp.com/",
     carousel: [petDiagram],
   },
   {
@@ -105,7 +127,6 @@ export const backEnd = [
     description:
       "API criada para suprir as necessidades de um sistema para teleatendimento de gestão de risco clínico, tendo por objetivo estabelecer prioridades para o atendimento dos pacientes de saúde mental que acessam o sistema de saúde e também definir o recurso assistencial mais adequado a cada caso. Tem como principal objetivo a identificação dos casos mais graves, permitindo um atendimento mais rápido e seguro de acordo com o potencial de risco, agravos à saúde ou grau de sofrimento.",
     git: "https://github.com/rafaelocdev/classificacao-risco-saude-mental",
-    deploy: "https://api-risco-saude-mental.herokuapp.com",
     carousel: [riskDiagram],
   },
   {
@@ -118,7 +139,6 @@ export const backEnd = [
     description:
       "O objetivo da aplicacao é de facilitar e auxiliar no aluguel de insumos e salas. Utilizando a metodologia de troca, a aplicacao é capaz de conectar pessoas que possuem produtos ou salas disponiveis para aluguel aquelas que estao a procura.",
     git: "https://github.com/ainemota/capstone",
-    deploy: "https://reoff.herokuapp.com/",
     carousel: [reOffDiagram],
   },
 ];

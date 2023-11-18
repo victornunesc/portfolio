@@ -99,12 +99,12 @@ const PortfolioSlide = ({
           <ContainerDescription>
             <h3>{title}</h3>
             <Description>{description}</Description>
-            <Description>
+            {deploy && <Description>
               Deploy:{" "}
               <a href={deploy} target="_blank" rel="noreferrer">
                 Clique aqui
               </a>
-            </Description>
+            </Description>}
             <Description>
               Github:{" "}
               <a href={github} target="_blank" rel="noreferrer">
