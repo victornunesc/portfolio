@@ -1,9 +1,9 @@
-//Space Callix
+//space-callix
 import spaceCallix from "../assets/portfolio/spaceCallix/space-callix.png";
 import spaceCallixMobile from "../assets/portfolio/spaceCallix/space-callix-mobile.png"
 import spaceCallixSearch from "../assets/portfolio/spaceCallix/space-callix-search.png"
 
-//OilCycle-front
+//oilCycle-front
 import oilCycleHome from "../assets/portfolio/oilCycle/oil-cycle-home.png";
 import oilCycleDashboard from "../assets/portfolio/oilCycle/oil-cycle-dashboard.png";
 import oilCycleMarket from "../assets/portfolio/oilCycle/oil-cycle-market.png";
@@ -31,6 +31,8 @@ import reOffDiagram from "../assets/portfolio/reOff/reOff-diagram.png";
 //pet-back
 import petDiagram from "../assets/portfolio/petcheck/pet-diagram.png";
 
+//space-callix-back
+import spaceCallixDiagram from "../assets/portfolio/spaceCallix/space-callix-diagram.png";
 
 export const frontEnd = [
   {
@@ -105,6 +107,21 @@ export const frontEnd = [
 ];
 
 export const backEnd = [
+  {
+    key: 3,
+    image: spaceCallixDiagram,
+    title: "Space CalliX - Back-end",
+    techs: "Node, Express, Redis, Typescript",
+    services: "Code, API REST, Consumo de API externa",
+    date: "Outubro/2022",
+    description:
+      "Projeto desenvolvido como parte do processo seletivo para a posição de Engenheiro de Software na empresa Callix. A tarefa consistiu em utilizar a SpaceX-API para efetuar consultas a quatro endpoints específicos, com o propósito de obter dados relevantes. O projeto foi concebido e implementado ao longo de uma semana, destacando habilidades técnicas e a capacidade de cumprir prazos estipulados. Além de abordar todos os pontos essenciais solicitados, foram realizadas todas as tarefas extras, incluindo a implementação do Google Optimize e Hotjar.",
+    git: "https://github.com/victornunesc/backend-callix",
+    deploy: "https://space-callix.vercel.app/",
+    carousel: [
+      spaceCallixDiagram
+    ],
+  },
   {
     key: 2,
     image: petDiagram,
