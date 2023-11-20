@@ -1,5 +1,7 @@
 //Space Callix
 import spaceCallix from "../assets/portfolio/spaceCallix/space-callix.png";
+import spaceCallixMobile from "../assets/portfolio/spaceCallix/space-callix-mobile.png"
+import spaceCallixSearch from "../assets/portfolio/spaceCallix/space-callix-search.png"
 
 //OilCycle-front
 import oilCycleHome from "../assets/portfolio/oilCycle/oil-cycle-home.png";
@@ -39,15 +41,13 @@ export const frontEnd = [
     services: "Code, UI/UX, Consumo de API externa/interna",
     date: "Outubro/2022",
     description:
-      "O site tem o objetivo de servir como intermediário entre coletores e doadores de óleo de cozinha de forma adiminuir a poluição causada pelo descarte irregular com incentivos a doações através de um modelo ganha-ganha onde o usuário pode trocar seu óleo reciclado por produtos parceiros dentro da plataforma",
+      "Projeto desenvolvido como parte do processo seletivo para a posição de Engenheiro de Software na empresa Callix. A tarefa consistiu em utilizar a SpaceX-API para efetuar consultas a quatro endpoints específicos, com o propósito de obter dados relevantes. O projeto foi concebido e implementado ao longo de uma semana, destacando habilidades técnicas e a capacidade de cumprir prazos estipulados. Além de abordar todos os pontos essenciais solicitados, foram realizadas todas as tarefas extras, incluindo a implementação do Google Optimize e Hotjar.",
     git: "https://github.com/victornunesc/frontend-callix",
     deploy: "https://space-callix.vercel.app/",
     carousel: [
       spaceCallix,
-      oilCycleRegister,
-      oilCycleMobile,
-      oilCycleDashboard,
-      oilCycleMarket,
+      spaceCallixMobile,
+      spaceCallixSearch,
     ],
   },
   {
