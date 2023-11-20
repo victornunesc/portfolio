@@ -46,15 +46,15 @@ const Portfolio = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            {frontEnd.map((project) => (
+            {frontEnd.map((project, index) => (
               <SwiperSlide key={project.key}>
                 <PortfolioSlide
                   imgPortfolio={project.image}
-                  title={project.title}
-                  techs={project.techs}
-                  services={project.services}
-                  date={project.date}
-                  description={project.description}
+                  title={t(`portfolio.projects.frontend.${index}.title`)}
+                  techs={t(`portfolio.projects.frontend.${index}.techs`)}
+                  services={t(`portfolio.projects.frontend.${index}.services`)}
+                  date={t(`portfolio.projects.frontend.${index}.date`)}
+                  description={t(`portfolio.projects.frontend.${index}.description`)}
                   github={project.git}
                   deploy={project.deploy}
                   carousel={project.carousel}
@@ -84,15 +84,15 @@ const Portfolio = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             className="mySwiper"
           >
-            {backEnd.map((project) => (
+            {backEnd.map((project, index) => (
               <SwiperSlide key={project.key}>
                 <PortfolioSlide
                   imgPortfolio={project.image}
-                  title={project.title}
-                  techs={project.techs}
-                  services={project.services}
-                  date={project.date}
-                  description={project.description}
+                  title={t(`portfolio.projects.backend.${index}.title`)}
+                  techs={t(`portfolio.projects.backend.${index}.techs`)}
+                  services={t(`portfolio.projects.backend.${index}.services`)}
+                  date={t(`portfolio.projects.backend.${index}.date`)}
+                  description={t(`portfolio.projects.backend.${index}.description`)}
                   github={project.git}
                   deploy={project.deploy}
                   carousel={project.carousel}

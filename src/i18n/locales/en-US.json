@@ -18,6 +18,75 @@
       "services": "Services",
       "date": "Date",
       "info": "More info."
+    },
+    "projects": {
+      "frontend": [
+        {
+          "title": "Space CalliX",
+          "techs": "React, Styled-components, Typescript, yup",
+          "services": "Code, UI/UX, External/internal API",
+          "date": "October/2022",
+          "description":
+            "Project developed as part of a technical test for the Software Engineer position at Callix. The task involved using the SpaceX-API to make queries to four specific endpoints, aiming to obtain relevant data. The project was designed and implemented over the course of a week, demonstrating technical skills and the ability to meet specific deadlines. In addition to addressing all essential points requested, all extra tasks were carried out, including the implementation of Google Optimize and Hotjar."
+        }, 
+        {
+          "title": "Oil Cycle",
+          "techs": "React, Chakra.ui, Typescript, JSON Server",
+          "services": "Code, UI/UX, Fake REST API",
+          "date": "February/2022",
+          "description":
+            "The purpose of the site is to act as an intermediary between those who collect and those who donate cooking oil, aiming to reduce pollution resulting from improper disposal. The platform seeks to promote donation by encouraging a mutual benefit approach, where users have the opportunity to exchange their recycled oil for products offered by partners registered on the platform. This model creates a win-win environment, contributing to environmental sustainability and providing users with tangible benefits through their donations."      
+        }, 
+        {
+          "title": "Habit management",
+          "techs": "React, Styled-components, Javascript",
+          "services": "Code, UI/UX, Integration with external APIs",
+          "date": "December/2021",
+          "description":
+            "The platform's proposal is to allow users to register and manage their habits, in addition to participating in groups with individuals who share similar categories of habits and goals."
+        },
+        {
+          "title": "Beverage management",
+          "techs": "React, Styled-components, Javascript",
+          "services": "Code, UI/UX, Integration with external APIs",
+          "date": "November/2021",
+          "description":
+            "Project developed for educational purposes, aiming to use the Context API to create three distinct events in which the user can independently select the drinks list for each event through the API - PUNK API."
+        }],
+      "backend": [
+          {
+            "title": "Space CalliX - Back-end",
+            "techs": "Node, Express, Redis, Typescript, yup",
+            "services": "Code, API REST, External/internal API",
+            "date": "October/2022",
+            "description":
+              "Project developed as part of a technical test for the Software Engineer position at Callix. The task involved using the SpaceX-API to make queries to four specific endpoints, aiming to obtain relevant data. The project was designed and implemented over the course of a week, demonstrating technical skills and the ability to meet specific deadlines. In addition to addressing all essential points requested, all extra tasks were carried out, including the implementation of Google Optimize and Hotjar."
+          },
+          {
+            "title": "API Veterinary Clinic",
+            "techs": "Python, Django, PostgreSQL",
+            "services": "Code, API REST",
+            "date": "July/2022",
+            "description":
+              "Developed with the purpose of serving veterinary clinics, the platform allows the registration of employees, clients, pets, consultations, anamnesis, diagnoses, histories, vaccine control, among other features."
+          },
+          {
+            "title": "API Risk and Mental Health Classification",
+            "techs": "Typescript, Node.js, Express, PostgreSQL, Jest",
+            "services": "Code, API REST",
+            "date": "June/2022",
+            "description":
+              "API developed to meet the needs of a clinical risk management teleservice system, with the objective of establishing priorities for the care of mental health patients who access the health system and also defining the most appropriate assistance resource for each case. Its main objective is to identify the most serious cases, allowing faster and safer care according to the potential risk, health problems or degree of suffering."
+          },
+          {
+            "title": "ReOff API",
+            "techs": "Python, Flask, PostgreSQL",
+            "services": "Code, API REST",
+            "date": "May/2022",
+            "description":
+              "The application aims to simplify and assist in the process of renting supplies and rooms. Through the exchange methodology, the application connects people who have products or rooms available for rent with those who are looking for these resources."
+          }
+        ]
     }
   },
   "contact": {

@@ -34,7 +34,6 @@ const PortfolioSlide = ({
   const [isOpenModal, setIsOpenModal] = useState(false);
   const { t } = useTranslation();
 
-
   function openModal() {
     setIsOpenModal(true);
   }
@@ -81,6 +80,7 @@ const PortfolioSlide = ({
         style={customStyles}
         bodyOpenClassName={"ReactModal__Body--open"}
         className={"ReactModal__Content"}
+        appElement={document.getElementById('root') || undefined}
       >
         <SectionDescription>
           <ContainerStack>
