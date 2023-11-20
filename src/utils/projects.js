@@ -1,4 +1,9 @@
-//OilCycle-front
+//space-callix
+import spaceCallix from "../assets/portfolio/spaceCallix/space-callix.png";
+import spaceCallixMobile from "../assets/portfolio/spaceCallix/space-callix-mobile.png"
+import spaceCallixSearch from "../assets/portfolio/spaceCallix/space-callix-search.png"
+
+//oilCycle-front
 import oilCycleHome from "../assets/portfolio/oilCycle/oil-cycle-home.png";
 import oilCycleDashboard from "../assets/portfolio/oilCycle/oil-cycle-dashboard.png";
 import oilCycleMarket from "../assets/portfolio/oilCycle/oil-cycle-market.png";
@@ -26,7 +31,27 @@ import reOffDiagram from "../assets/portfolio/reOff/reOff-diagram.png";
 //pet-back
 import petDiagram from "../assets/portfolio/petcheck/pet-diagram.png";
 
+//space-callix-back
+import spaceCallixDiagram from "../assets/portfolio/spaceCallix/space-callix-diagram.png";
+
 export const frontEnd = [
+  {
+    key: 3,
+    image: spaceCallix,
+    title: "Space CalliX",
+    techs: "React, Styled-components, Typescript",
+    services: "Code, UI/UX, Consumo de API externa/interna",
+    date: "Outubro/2022",
+    description:
+      "Projeto desenvolvido como parte do processo seletivo para a posição de Engenheiro de Software na empresa Callix. A tarefa consistiu em utilizar a SpaceX-API para efetuar consultas a quatro endpoints específicos, com o propósito de obter dados relevantes. O projeto foi concebido e implementado ao longo de uma semana, destacando habilidades técnicas e a capacidade de cumprir prazos estipulados. Além de abordar todos os pontos essenciais solicitados, foram realizadas todas as tarefas extras, incluindo a implementação do Google Optimize e Hotjar.",
+    git: "https://github.com/victornunesc/frontend-callix",
+    deploy: "https://space-callix.vercel.app/",
+    carousel: [
+      spaceCallix,
+      spaceCallixMobile,
+      spaceCallixSearch,
+    ],
+  },
   {
     key: 2,
     image: oilCycleHome,
@@ -83,6 +108,21 @@ export const frontEnd = [
 
 export const backEnd = [
   {
+    key: 3,
+    image: spaceCallixDiagram,
+    title: "Space CalliX - Back-end",
+    techs: "Node, Express, Redis, Typescript",
+    services: "Code, API REST, Consumo de API externa",
+    date: "Outubro/2022",
+    description:
+      "Projeto desenvolvido como parte do processo seletivo para a posição de Engenheiro de Software na empresa Callix. A tarefa consistiu em utilizar a SpaceX-API para efetuar consultas a quatro endpoints específicos, com o propósito de obter dados relevantes. O projeto foi concebido e implementado ao longo de uma semana, destacando habilidades técnicas e a capacidade de cumprir prazos estipulados. Além de abordar todos os pontos essenciais solicitados, foram realizadas todas as tarefas extras, incluindo a implementação do Google Optimize e Hotjar.",
+    git: "https://github.com/victornunesc/backend-callix",
+    deploy: "https://space-callix.vercel.app/",
+    carousel: [
+      spaceCallixDiagram
+    ],
+  },
+  {
     key: 2,
     image: petDiagram,
     title: "Clínica Veterinária API",
@@ -92,7 +132,6 @@ export const backEnd = [
     description:
       "Criada com o intuito de servir clinicas veterinarias sendo possivel cadastrar empregados, clientes, pets, consultas, anamnese, diagnósticos, histórico, controle de vacinas etc.",
     git: "https://github.com/YasminMartinsDeBrito/clinic_pet",
-    deploy: "https://pet-clinic-kenzie.herokuapp.com/",
     carousel: [petDiagram],
   },
   {
@@ -105,7 +144,6 @@ export const backEnd = [
     description:
       "API criada para suprir as necessidades de um sistema para teleatendimento de gestão de risco clínico, tendo por objetivo estabelecer prioridades para o atendimento dos pacientes de saúde mental que acessam o sistema de saúde e também definir o recurso assistencial mais adequado a cada caso. Tem como principal objetivo a identificação dos casos mais graves, permitindo um atendimento mais rápido e seguro de acordo com o potencial de risco, agravos à saúde ou grau de sofrimento.",
     git: "https://github.com/rafaelocdev/classificacao-risco-saude-mental",
-    deploy: "https://api-risco-saude-mental.herokuapp.com",
     carousel: [riskDiagram],
   },
   {
@@ -118,7 +156,6 @@ export const backEnd = [
     description:
       "O objetivo da aplicacao é de facilitar e auxiliar no aluguel de insumos e salas. Utilizando a metodologia de troca, a aplicacao é capaz de conectar pessoas que possuem produtos ou salas disponiveis para aluguel aquelas que estao a procura.",
     git: "https://github.com/ainemota/capstone",
-    deploy: "https://reoff.herokuapp.com/",
     carousel: [reOffDiagram],
   },
 ];
