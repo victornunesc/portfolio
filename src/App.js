@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import { Toaster } from "react-hot-toast";
 import Footer from "./pages/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const { currentTheme } = useTheme();
@@ -23,6 +24,7 @@ function App() {
         <Contact />
         <Footer/>
       </ThemeProvider>
+      <Analytics />
     </>
   );
 }
